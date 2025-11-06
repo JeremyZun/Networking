@@ -325,26 +325,48 @@ function loadQuestion(index) {
             
             // 檢查是否已經回答過這題
             if (userAnswers[index] !== undefined && userAnswers[index].selected) {
-                if (optionElement.dataset.option === userAnswers[index].selected) {
-                    optionElement.classList.add('selected');
+                if (question.type === 'multiple') {
+                    // 多選題：檢查當前選項是否在用戶的選擇中
+                    const userSelected = userAnswers[index].selected || '';
+                    if (userSelected.includes(optionElement.dataset.option)) {
+                        optionElement.classList.add('selected');
+                    }
                     
                     // 在檢視模式或練習模式下顯示正確/錯誤狀態
                     if (isExamSubmitted || currentMode === 'practice') {
-                        if (userAnswers[index].isCorrect) {
+                        const correctAnswers = question.answer;
+                        const isCorrectOption = correctAnswers.includes(optionElement.dataset.option);
+                        const isUserSelected = userSelected.includes(optionElement.dataset.option);
+                        
+                        if (isCorrectOption) {
                             optionElement.classList.add('correct');
-                        } else {
+                        } else if (isUserSelected && !isCorrectOption) {
                             optionElement.classList.add('incorrect');
-                            
-                            // 同時顯示正確答案
-                            const correctOption = document.querySelector(`[data-option="${question.answer}"]`);
-                            if (correctOption) {
-                                correctOption.classList.add('correct');
-                            }
                         }
                     }
-                } else if ((isExamSubmitted || currentMode === 'practice') && optionElement.dataset.option === question.answer) {
-                    // 在檢視模式下顯示正確答案
-                    optionElement.classList.add('correct');
+                } else {
+                    // 原有的單選題邏輯
+                    if (optionElement.dataset.option === userAnswers[index].selected) {
+                        optionElement.classList.add('selected');
+                        
+                        // 在檢視模式或練習模式下顯示正確/錯誤狀態
+                        if (isExamSubmitted || currentMode === 'practice') {
+                            if (userAnswers[index].isCorrect) {
+                                optionElement.classList.add('correct');
+                            } else {
+                                optionElement.classList.add('incorrect');
+                                
+                                // 同時顯示正確答案
+                                const correctOption = document.querySelector(`[data-option="${question.answer}"]`);
+                                if (correctOption) {
+                                    correctOption.classList.add('correct');
+                                }
+                            }
+                        }
+                    } else if ((isExamSubmitted || currentMode === 'practice') && optionElement.dataset.option === question.answer) {
+                        // 在檢視模式下顯示正確答案
+                        optionElement.classList.add('correct');
+                    }
                 }
             }
             
@@ -447,7 +469,7 @@ function loadQuestion(index) {
     }
 }
 
-// 顯示回饋
+// 修改 showFeedback 函數
 function showFeedback(questionIndex) {
     // 在考試模式下且未交卷時不顯示回饋
     if (currentMode === 'exam' && !isExamSubmitted) {
@@ -469,6 +491,10 @@ function showFeedback(questionIndex) {
         
         if (question.type === 'truefalse') {
             answerFeedbackElement.textContent = `錯誤！正確答案是：${question.answer}`;
+        } else if (question.type === 'multiple') {
+            // 多選題的回饋
+            const correctAnswers = question.answer.split('').join('、');
+            answerFeedbackElement.textContent = `錯誤！正確答案是：${correctAnswers}`;
         } else if (question.type !== 'matching') {
             answerFeedbackElement.textContent = `錯誤！正確答案是：${question.answer}`;
         } else {
@@ -604,7 +630,7 @@ function switchToPracticeMode() {
     updateStats();
 }
 
-// 切換到練習模式
+// 在 script.js 中找到 selectOption 函數，修改它來支援多選
 function selectOption(optionElement, questionIndex) {
     const question = currentMode === 'exam' ? examQuestions[questionIndex] : questions[questionIndex];
     
@@ -613,67 +639,149 @@ function selectOption(optionElement, questionIndex) {
         return;
     }
     
-    // 移除其他選項的選中狀態
-    const options = document.querySelectorAll('.option');
-    options.forEach(opt => {
-        opt.classList.remove('selected', 'correct', 'incorrect');
-    });
+    // 檢查是否為多選題
+    const isMultipleChoice = question.type === 'multiple';
     
-    // 標記選中的選項
-    optionElement.classList.add('selected');
-    
-    // 記錄用戶答案
-    const selectedOption = optionElement.dataset.option;
-    
-    // 檢查是否已經有答案，如果有則更新分數
-    const hadPreviousAnswer = userAnswers[questionIndex] !== undefined;
-    const previousWasCorrect = hadPreviousAnswer ? userAnswers[questionIndex].isCorrect : false;
-    
-    // 更新答案
-    userAnswers[questionIndex] = {
-        selected: selectedOption,
-        isCorrect: selectedOption === question.answer
-    };
-    
-    // 在練習模式下立即顯示結果，考試模式下只記錄答案
-    if (currentMode === 'practice') {
-        if (selectedOption === question.answer) {
-            // 如果之前是錯誤的，現在修正為正確，需要更新分數
-            if (hadPreviousAnswer && !previousWasCorrect) {
-                score.incorrect--;
-                score.correct++;
-            } else if (!hadPreviousAnswer) {
-                // 第一次回答正確
-                score.correct++;
+    if (!isMultipleChoice) {
+        // 單選題的邏輯保持不變
+        // 移除其他選項的選中狀態
+        const options = document.querySelectorAll('.option');
+        options.forEach(opt => {
+            opt.classList.remove('selected', 'correct', 'incorrect');
+        });
+        
+        // 標記選中的選項
+        optionElement.classList.add('selected');
+        
+        // 記錄用戶答案
+        const selectedOption = optionElement.dataset.option;
+        
+        // 檢查是否已經有答案，如果有則更新分數
+        const hadPreviousAnswer = userAnswers[questionIndex] !== undefined;
+        const previousWasCorrect = hadPreviousAnswer ? userAnswers[questionIndex].isCorrect : false;
+        
+        // 更新答案
+        userAnswers[questionIndex] = {
+            selected: selectedOption,
+            isCorrect: selectedOption === question.answer
+        };
+        
+        // 在練習模式下立即顯示結果，考試模式下只記錄答案
+        if (currentMode === 'practice') {
+            if (selectedOption === question.answer) {
+                // 如果之前是錯誤的，現在修正為正確，需要更新分數
+                if (hadPreviousAnswer && !previousWasCorrect) {
+                    score.incorrect--;
+                    score.correct++;
+                } else if (!hadPreviousAnswer) {
+                    // 第一次回答正確
+                    score.correct++;
+                }
+                optionElement.classList.add('correct');
+            } else {
+                // 如果之前是正確的，現在變成錯誤，需要更新分數
+                if (hadPreviousAnswer && previousWasCorrect) {
+                    score.correct--;
+                    score.incorrect++;
+                } else if (!hadPreviousAnswer) {
+                    // 第一次回答錯誤
+                    score.incorrect++;
+                }
+                optionElement.classList.add('incorrect');
+                
+                // 顯示正確答案
+                const correctOption = document.querySelector(`[data-option="${question.answer}"]`);
+                if (correctOption) {
+                    correctOption.classList.add('correct');
+                }
             }
-            optionElement.classList.add('correct');
-        } else {
-            // 如果之前是正確的，現在變成錯誤，需要更新分數
-            if (hadPreviousAnswer && previousWasCorrect) {
-                score.correct--;
-                score.incorrect++;
-            } else if (!hadPreviousAnswer) {
-                // 第一次回答錯誤
-                score.incorrect++;
-            }
-            optionElement.classList.add('incorrect');
             
-            // 顯示正確答案
-            const correctOption = document.querySelector(`[data-option="${question.answer}"]`);
-            if (correctOption) {
-                correctOption.classList.add('correct');
-            }
+            // 顯示回饋
+            showFeedback(questionIndex);
+            
+            // 更新統計數據
+            updateStats();
+        } else {
+            // 考試模式下只記錄答案，不顯示對錯
+            updateStats();
         }
-        
-        // 顯示回饋
-        showFeedback(questionIndex);
-        
-        // 更新統計數據
-        updateStats();
     } else {
-        // 考試模式下只記錄答案，不顯示對錯
-        // 更新統計數據但不顯示正確/錯誤
-        updateStats();
+        // 多選題的邏輯
+        const selectedOption = optionElement.dataset.option;
+        
+        // 切換選中狀態
+        optionElement.classList.toggle('selected');
+        
+        // 獲取當前所有選中的選項
+        const selectedOptions = Array.from(document.querySelectorAll('.option.selected'))
+            .map(opt => opt.dataset.option)
+            .sort()
+            .join(''); // 按字母排序並連接
+        
+        // 檢查是否已經有答案，如果有則更新分數
+        const hadPreviousAnswer = userAnswers[questionIndex] !== undefined;
+        const previousWasCorrect = hadPreviousAnswer ? userAnswers[questionIndex].isCorrect : false;
+        
+        // 更新答案
+        userAnswers[questionIndex] = {
+            selected: selectedOptions,
+            isCorrect: selectedOptions === question.answer
+        };
+        
+        // 在練習模式下立即顯示結果
+        if (currentMode === 'practice') {
+            const correctAnswers = question.answer.split('').sort().join('');
+            
+            if (selectedOptions === correctAnswers) {
+                // 如果之前是錯誤的，現在修正為正確，需要更新分數
+                if (hadPreviousAnswer && !previousWasCorrect) {
+                    score.incorrect--;
+                    score.correct++;
+                } else if (!hadPreviousAnswer) {
+                    // 第一次回答正確
+                    score.correct++;
+                }
+                
+                // 標記所有正確選項為綠色
+                document.querySelectorAll('.option').forEach(opt => {
+                    if (correctAnswers.includes(opt.dataset.option)) {
+                        opt.classList.add('correct');
+                    }
+                });
+            } else {
+                // 如果之前是正確的，現在變成錯誤，需要更新分數
+                if (hadPreviousAnswer && previousWasCorrect) {
+                    score.correct--;
+                    score.incorrect++;
+                } else if (!hadPreviousAnswer) {
+                    // 第一次回答錯誤
+                    score.incorrect++;
+                }
+                
+                // 標記用戶選擇的錯誤選項為紅色
+                document.querySelectorAll('.option.selected').forEach(opt => {
+                    if (!correctAnswers.includes(opt.dataset.option)) {
+                        opt.classList.add('incorrect');
+                    }
+                });
+                
+                // 標記正確答案為綠色
+                document.querySelectorAll('.option').forEach(opt => {
+                    if (correctAnswers.includes(opt.dataset.option)) {
+                        opt.classList.add('correct');
+                    }
+                });
+            }
+            
+            // 顯示回饋
+            showFeedback(questionIndex);
+            
+            // 更新統計數據
+            updateStats();
+        } else {
+            // 考試模式下只記錄答案，不顯示對錯
+            updateStats();
+        }
     }
 }
 

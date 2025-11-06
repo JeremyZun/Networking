@@ -622,3 +622,25 @@ footer {
     transform: scale(0.95);
     transition: transform 0.1s;
 }
+
+/* 在多選題模式下，添加特殊樣式提示 */
+.multiple-choice-hint {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.multiple-choice-hint::before {
+    content: "💡 ";
+}
+
+/* 多選題選項的選中狀態可以稍微不同 */
+.option.selected.multiple {
+    background: #e3f2fd;
+    border-color: #2196f3;
+}
