@@ -1,6 +1,6 @@
 const questions = [
   {
-    "id": 1,
+    id: 1,
     "question": "金融業間之電子資金移轉作業是屬於電子商務的何種範疇？",
     "options": [
       "(A) B2B",
@@ -13,7 +13,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 2,
+    id: 2,
     "question": "大部分的組織及個人都必須經由 ISP的伺服器，才能和網際網路相連，下列何者為台灣學術網路媒介？",
     "options": [
       "(A) Intel",
@@ -26,7 +26,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 3,
+    id: 3,
     "question": "下列何種網際網路服務可以提供線上傳遞訊息及線上即時交談的功能？",
     "options": [
       "(A) E-mail",
@@ -39,7 +39,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 4,
+    id: 4,
     "question": "下列哪一個網際網路 (Internet) 上的服務，其主要目的是讓使用者搜尋檔案所在的位置，以方便下載？",
     "options": [
       "(A) IRC",
@@ -52,7 +52,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 5,
+    id: 5,
     "question": "下列有關部落格 (BLOG) 的敘述，何者錯誤？",
     "options": [
       "(A) 容許網友在裡頭寫文章、貼照片、儲存個人相關訊息",
@@ -65,7 +65,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 6,
+    id: 6,
     "question": "電子商務發展快速，改變了許多傳統的商業模式。下列何者是消費者對消費者 (C to C) 的電子商務類型？",
     "options": [
       "(A) 博客來網路書店",
@@ -78,7 +78,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 7,
+    id: 7,
     "question": "下列何者是電腦科技在「居家安全」方面的應用？",
     "options": [
       "(A) 門禁管制",
@@ -91,7 +91,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 8,
+    id: 8,
     "question": "合購網站與湊票網站是屬於下列哪一種電子商務類型？",
     "options": [
       "(A) B2C",
@@ -104,7 +104,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 9,
+    id: 9,
     "question": "下列哪一種軟體，可以讓使用者在網路上即時互相呼叫、傳遞訊息及進行聊天？",
     "options": [
       "(A) Telnet",
@@ -117,7 +117,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 10,
+    id: 10,
     "question": "一家 IC 製造公司利用網路與其供應商之間進行電子資料交換與電子採購處理，這是屬於下列哪一種型態的電子商務？",
     "options": [
       "(A) B2C",
@@ -130,7 +130,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 11,
+    id: 11,
     "question": "下列何者為企業與企業間自動化交易的電子商務類型？",
     "options": [
       "(A) C2C",
@@ -143,7 +143,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 12,
+    id: 12,
     "question": "下列哪一套軟體不是專門用來進行即時通訊的軟體？",
     "options": [
       "(A) MSN Messenger",
@@ -156,7 +156,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 13,
+    id: 13,
     "question": "下列何者不是網際網路的服務項目？",
     "options": [
       "(A) FTP",
@@ -169,7 +169,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 14,
+    id: 14,
     "question": "將個人物品透過特定網站，如 Yahoo!奇摩拍賣、eBay等進行拍賣，以提供其他網友競標購買。此種運用網際網路進行交易的電子商務類型是：",
     "options": [
       "(A) C2B",
@@ -182,7 +182,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 15,
+    id: 15,
     "question": "下列哪一項電腦應用的主要目的是利用電腦網路來進行跨行轉帳的工作？",
     "options": [
       "(A) 電子商務",
@@ -195,7 +195,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 16,
+    id: 16,
     "question": "使用者備有數據機，配有撥接帳號，就可透過家裡之電話線路撥接上 ISP，連上 Internet，下列何者屬學術界使用之免費 ISP？",
     "options": [
       "(A) SEEDnet",
@@ -208,7 +208,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 17,
+    id: 17,
     "question": "下列何者為 TANet之中文意義？",
     "options": [
       "(A) 電子郵件",
@@ -221,7 +221,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 18,
+    id: 18,
     "question": "目前在國內最大的「學術性網際網路」服務機構為下列何者？",
     "options": [
       "(A) SeedNet",
@@ -234,7 +234,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 19,
+    id: 19,
     "question": "下列英文名稱所對照之中文意義，何者有誤？",
     "options": [
       "(A) FTP檔案搜尋系統",
@@ -247,7 +247,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 20,
+    id: 20,
     "question": "什麼是 3G？",
     "options": [
       "(A) 需透過數據機上網",
@@ -260,7 +260,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 21,
+    id: 21,
     "question": "學校中所使用的網路為",
     "options": [
       "(A) Hinet",
@@ -273,7 +273,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 22,
+    id: 22,
     "question": "目前台灣三大網路中，以學校及學術研究單位為主所使用的網路為？",
     "options": [
       "(A) HiNet",
@@ -286,7 +286,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 23,
+    id: 23,
     "question": "下列何者不是 ISP (Internet Service Provider) 所提供的服務？",
     "options": [
       "(A) 提供個人網頁",
@@ -299,7 +299,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 24,
+    id: 24,
     "question": "使用者備有數據機，配有撥接帳號，就可透過家裡之電話線路撥接上 ISP，連上 Internet，下列何者屬學術界使用之免費 ISP？",
     "options": [
       "(A) SEEDnet",
@@ -312,7 +312,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 25,
+    id: 25,
     "question": "小明成天流連於網路咖啡店中與網友玩戰略遊戲，請問小明是使用哪種網路資源？",
     "options": [
       "(A) MUD",
@@ -325,7 +325,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 26,
+    id: 26,
     "question": "欲從網路下載軟體，若已知檔案名稱為 xyz.zip，請問使用何種方式可最快找到這個檔案身在何處？",
     "options": [
       "(A) MSN",
@@ -338,7 +338,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 27,
+    id: 27,
     "question": "下列的專有名詞中英對照，何者有誤？",
     "options": [
       "(A) 「電子佈告欄」BBS",
@@ -351,7 +351,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 28,
+    id: 28,
     "question": "下列何者不是網際網路 (Internet) 所提供的服務？",
     "options": [
       "(A) POS",
@@ -364,7 +364,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 29,
+    id: 29,
     "question": "Yahoo網路拍賣會就是典型的？",
     "options": [
       "(A) B2C",
@@ -377,7 +377,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 30,
+    id: 30,
     "question": "B2C的 B是指？",
     "options": [
       "(A) Batch",
@@ -390,7 +390,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 31,
+    id: 31,
     "question": "C2B的 C是指",
     "options": [
       "(A) Communication",
@@ -403,7 +403,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 32,
+    id: 32,
     "question": "由一群電腦透過某些傳輸路徑所連接而成的一個系統稱之為？",
     "options": [
       "(A) 電腦系統",
@@ -416,7 +416,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 33,
+    id: 33,
     "question": "為使用者提供檔案的服務並管理共享資源，如硬碟、印表機等稱之為？",
     "options": [
       "(A) 工作站",
@@ -429,7 +429,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 34,
+    id: 34,
     "question": "透過電話線路，經過交換機層層的轉接來進行訊息傳遞的線路稱為？",
     "options": [
       "(A) 電話線路",
@@ -442,7 +442,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 35,
+    id: 35,
     "question": "有關電腦網路的優點，下列何者為非？",
     "options": [
       "(A) 資源共享",
@@ -455,7 +455,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 36,
+    id: 36,
     "question": "國家基礎建設的英文簡稱為？",
     "options": [
       "(A) INTERNET",
@@ -468,7 +468,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 37,
+    id: 37,
     "question": "網路中 MUD為？",
     "options": [
       "(A) 網路遊戲",
@@ -481,7 +481,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 38,
+    id: 38,
     "question": "國家高速網路與計算中心簡稱為？",
     "options": [
       "(A) NCC",
@@ -494,7 +494,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 39,
+    id: 39,
     "question": "為了提供民眾查詢即時的公車資訊，最需要結合下列哪一項技術？",
     "options": [
       "(A) GPS",
@@ -507,7 +507,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 40,
+    id: 40,
     "question": "電子商務係指透過網路進行的商業活動，包括商品交易、資訊提供、市場情報、客戶服務等，依對象分類可分企業和消費者二大類群，其中「企業對消費者」為何？",
     "options": [
       "(A) B2C",
@@ -520,7 +520,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 41,
+    id: 41,
     "question": "有關電腦應用在生活及學習的敘述，下列何者正確？",
     "options": [
       "(A) GPS由於保密性高，因此廣泛應用在門禁管制",
@@ -533,7 +533,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 42,
+    id: 42,
     "question": "下列何種設備可將類比 (Analog) 信號與數位 (Digital) 信號互相轉換？",
     "options": [
       "(A) 前置處理機",
@@ -546,7 +546,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 43,
+    id: 43,
     "question": "以下哪一種通訊連線方式可以做為上 Internet網路之方法？",
     "options": [
       "(A) 掃瞄器",
@@ -559,7 +559,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 44,
+    id: 44,
     "question": "利用標準數據機連上 Internet，其最高傳輸速度為若干？",
     "options": [
       "(A) 33.6K",
@@ -572,7 +572,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 45,
+    id: 45,
     "question": "10Base2乙太網路使用 RG58同軸電纜為傳輸媒介，其網路拓樸 (Topology) 為下列哪種結構？",
     "options": [
       "(A) 星狀",
@@ -585,7 +585,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 46,
+    id: 46,
     "question": "下列哪一種網路拓撲 (Topology)，是以一條線路來連接所有的節點，線路兩端結尾處則以終端電阻來結束佈線？",
     "options": [
       "(A) 匯流排拓撲",
@@ -598,7 +598,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 47,
+    id: 47,
     "question": "一群同學同住一棟房舍中，使用一部集線器將所有電腦連接起來形成一個區域乙太網路，則該網路最可能為下列哪種拓樸 (Topology)？",
     "options": [
       "(A) 星狀",
@@ -611,7 +611,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 48,
+    id: 48,
     "question": "有關網路設備的敘述，何者正確？",
     "options": [
       "(A) 交換器是用來轉換數位訊號與類比訊號",
@@ -624,7 +624,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 49,
+    id: 49,
     "question": "下列網路傳輸設備中，何者用來將網路訊號增強後再送出？",
     "options": [
       "(A) 橋接器 (Bridge)",
@@ -637,7 +637,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 50,
+    id: 50,
     "question": "下列有關網路傳輸設備的敘述，何者錯誤？",
     "options": [
       "(A) 集線器 (hub) 可連接多個網路節點",
@@ -650,7 +650,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 51,
+    id: 51,
     "question": "下列何種網路設備可以作為區域網路與廣域網路連接時的橋樑？",
     "options": [
       "(A) 路由器 (Router)",
@@ -663,7 +663,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 52,
+    id: 52,
     "question": "下列何種網路通訊設備會將連結的網段組成單一個踫撞領域？",
     "options": [
       "(A) 路由器",
@@ -676,7 +676,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 53,
+    id: 53,
     "question": "辦公室裡有 10部電腦，要共同分享一部印表機，需安裝下列何種設備？",
     "options": [
       "(A) 計數器",
@@ -689,7 +689,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 54,
+    id: 54,
     "question": "對 IP分享器之敘述，下列何者錯誤？",
     "options": [
       "(A) 多台電腦可同時上網",
@@ -702,7 +702,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 55,
+    id: 55,
     "question": "下列何者是網路設備？",
     "options": [
       "(A) 交換器",
@@ -715,7 +715,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 56,
+    id: 56,
     "question": "電腦教室內的 5部電腦，若以雙絞線直接連至具有 10個埠的集線器上，請問此種網路連線架構稱為？",
     "options": [
       "(A) 匯流排拓樸",
@@ -728,7 +728,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 57,
+    id: 57,
     "question": "在同一辦公室裡，如果在 20部以上的電腦，要分享一部具有網路功能的高速雷射印表機，下列何者是最合適的設備？",
     "options": [
       "(A) 集線器",
@@ -741,7 +741,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 58,
+    id: 58,
     "question": "關於電腦網路的敘述，下列何者有誤？",
     "options": [
       "(A) 通訊協定 TCP/IP可適用於區域網路或廣域網路",
@@ -754,7 +754,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 59,
+    id: 59,
     "question": "若要連接兩個不同的網路區段，且具有選擇資料傳輸路徑的功能，則使用下列哪一種網路通訊設備最合適？",
     "options": [
       "(A) 路由器 (Router)",
@@ -767,7 +767,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 60,
+    id: 60,
     "question": "下列哪個網路連線設備能協助訊息封包 (Packets) 於 Internet傳遞過程中找到適當路徑，並順利將此訊息封包順利傳送至目的地？",
     "options": [
       "(A) ADSL數據機 (ADSL Modem)",
@@ -780,7 +780,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 61,
+    id: 61,
     "question": "下列哪一種網路的拓撲 (Topology) 型式，是用一條線路連接所有的網路節點，在網路線路兩端結尾處則以終端電阻來結束佈線？",
     "options": [
       "(A) 星狀拓撲",
@@ -793,7 +793,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 62,
+    id: 62,
     "question": "10Base-T乙太網路，此種乙太網路的佈線方式為？",
     "options": [
       "(A) 匯流排",
@@ -806,7 +806,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 63,
+    id: 63,
     "question": "以下哪一項裝置不屬於架設乙太區域網路時可能會使用的設備？",
     "options": [
       "(A) 數據機",
@@ -819,7 +819,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 64,
+    id: 64,
     "question": "有一部中央 (hub) 電腦負責管理網路，其餘電腦都與其直接連接，此種網路架構稱為：",
     "options": [
       "(A) 星狀網路",
@@ -832,7 +832,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 65,
+    id: 65,
     "question": "中繼器 (repeater) 是屬於 OSI模型中的哪一層裝置？",
     "options": [
       "(A) 實體層",
@@ -845,7 +845,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 66,
+    id: 66,
     "question": "在 Windows 作業系統中，以手動方式設定 TCP/IP網路連線，設定項目包含 IP位址、子網路遮罩及下列何種設備的 IP位址？",
     "options": [
       "(A) 集線器 (Hub)",
@@ -858,7 +858,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 67,
+    id: 67,
     "question": "下列哪一種網路設備具備支援網路層 (network layer)的功能？",
     "options": [
       "(A) 橋接器 (bridge)",
@@ -871,7 +871,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 68,
+    id: 68,
     "question": "下列何者是用於一般個人電腦網路線接頭之規格？",
     "options": [
       "(A) RJ-11",
@@ -884,7 +884,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 69,
+    id: 69,
     "question": "以下何種裝置是用來連接不同通訊協定的網路？",
     "options": [
       "(A) 閘道器",
@@ -897,7 +897,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 70,
+    id: 70,
     "question": "下列哪一項代表網路卡實體位址 (MACAddress)？",
     "options": [
       "(A) https://tw.yahoo.com",
@@ -910,7 +910,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 71,
+    id: 71,
     "question": "下列何者不是電腦網路的連結架構？",
     "options": [
       "(A) 環狀",
@@ -923,7 +923,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 72,
+    id: 72,
     "question": "下列對於網路的拓樸 (Topology) 的描述，何者錯誤？",
     "options": [
       "(A) 匯流排 (Bus) 結構適合廣播 (Broadcast) 的方式傳遞資料",
@@ -936,7 +936,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 73,
+    id: 73,
     "question": "某電腦教室內有 10部桌上型電腦以及一台 16埠集線器 (Hub)，每部電腦都只有一張具備一組 RJ-45雙絞線接頭的網路卡，若要讓該電腦教室內的所有電腦同一時間連接到網際網路，請問使用哪種網路連線拓樸架構最合適？",
     "options": [
       "(A) 匯流排拓樸",
@@ -949,7 +949,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 74,
+    id: 74,
     "question": "有關 MAC (Media Access Control) 位址的敘述，下列何項不正確？",
     "options": [
       "(A) 168.95.1.1是屬於 MAC位址",
@@ -962,7 +962,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 75,
+    id: 75,
     "question": "下列哪一項不是網路設備？",
     "options": [
       "(A) 集線器 (Hub)",
@@ -975,7 +975,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 76,
+    id: 76,
     "question": "下列哪一種網路連接設備具有過濾封包的功能，可避免網路區段間的訊息干擾，提高網路傳輸效率？",
     "options": [
       "(A) 橋接器",
@@ -988,7 +988,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 77,
+    id: 77,
     "question": "如果路由器無法判斷封包的下一個目的節點，路由器會如何動作？",
     "options": [
       "(A) 廣播此封包",
@@ -1001,7 +1001,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 78,
+    id: 78,
     "question": "網路交換器具有哪兩個特性？",
     "options": [
       "(A) 可識別所接收資要的預定目的地",
@@ -1014,7 +1014,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 79,
+    id: 79,
     "question": "公司網路中，所有裝置都連線到同一部網路交換器，這是何種網路拓樸？",
     "options": [
       "(A) 環狀",
@@ -1027,7 +1027,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 80,
+    id: 80,
     "question": "公司網路中，所有裝置都連線到同一部網路交換器，實體上是何種網路拓樸？",
     "options": [
       "(A) 網狀",
@@ -1040,7 +1040,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 81,
+    id: 81,
     "question": "網際網路的設計是採用哪一種網路拓璞？",
     "options": [
       "(A) 星形",
@@ -1053,7 +1053,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 82,
+    id: 82,
     "question": "OSI模型第二層中，連接多部電腦的裝置是哪種？",
     "options": [
       "(A) 交換器",
@@ -1066,7 +1066,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 83,
+    id: 83,
     "question": "多層交換器除了交換功能之外，還有哪些功能？",
     "options": [
       "(A) 提供第三層路由功能",
@@ -1079,7 +1079,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 84,
+    id: 84,
     "question": "下列哪種路由具備容錯能力？",
     "options": [
       "(A) 靜態路由",
@@ -1092,7 +1092,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 85,
+    id: 85,
     "question": "將 Windows Server 2016電腦已設定成路由器，針對服務品質 QoS設定原則支援，可以透過 QoS原則進行哪兩個原則的設定？",
     "options": [
       "(A) 根據躍點計數來最佳化路由",
@@ -1107,7 +1107,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 86,
+    id: 86,
     "question": "網狀網路拓樸具有哪兩個特性？",
     "options": [
       "(A) 每個節點都連線到其他每個節點",
@@ -1120,7 +1120,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 87,
+    id: 87,
     "question": "乙太網路拓樸具有哪兩個特性？",
     "options": [
       "(A) 通常使用雙絞線或光纖媒體",
@@ -1133,7 +1133,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 88,
+    id: 88,
     "question": "環狀拓樸會使用哪一種存取方法？",
     "options": [
       "(A) 迴避 Avoidance",
@@ -1146,7 +1146,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 89,
+    id: 89,
     "question": "哪個網路拓樸藉由提供備援通訊路徑來提供容錯通訊？",
     "options": [
       "(A) 星形",
@@ -1159,7 +1159,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 90,
+    id: 90,
     "question": "如何更新路由器的靜態路由表？",
     "options": [
       "(A) 在重設路由之後透過 RIP通訊協定",
@@ -1172,7 +1172,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 91,
+    id: 91,
     "question": "RIP使用哪個標準來判斷路由成本？",
     "options": [
       "(A) 躍點計數",
@@ -1185,7 +1185,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 92,
+    id: 92,
     "question": "哪個網路裝置會讓工作群組中的電腦互連，可以從遠端進行設定，並且提供最佳的輸送量？",
     "options": [
       "(A) 路由器",
@@ -1198,7 +1198,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 93,
+    id: 93,
     "question": "你是小型企業的網路系統管理員，某員工無法存取任何網路，其他員工都沒有這個問題，所有的電腦都位於同一個內部網路，你如何化解此問題？",
     "options": [
       "(A) 檢查該員工的網路介面卡，以確認網路介面卡能夠應用",
@@ -1213,7 +1213,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 94,
+    id: 94,
     "question": "你是小型企業的網路系統管理員，某天清晨開始工作時，你發現公司所有員工都無法存取外部網路，但所有員工都可以存取內部網路網站，所有電腦都在同一個內部網路，由一部路由器連接起來，你必須排解此問題，你應該完成兩個動作請選擇兩個答案？",
     "options": [
       "(A) 檢查路由器是否有良好的實體連線能力",
@@ -1226,7 +1226,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 95,
+    id: 95,
     "question": "您的學校網路具有多個路由器，其中一間宿舍的學生回報，無法連線到電子郵件伺服器。您確認電子郵件伺服器運作正常。您懷疑是子網路上的路由器造成問題，此時應該執行哪二動作？(請選 2個答案)",
     "options": [
       "(A) 查看路由器的路由表",
@@ -1239,7 +1239,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 96,
+    id: 96,
     "question": "有線乙太網路拓樸具有兩個特性？",
     "options": [
       "(A) 可以交涉不同的傳輸速度",
@@ -1252,7 +1252,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 97,
+    id: 97,
     "question": "電腦是使用銅線經由網路跳線面板連接至交換器，電腦取得的資料速度低於預期，你應該執行哪兩個動作來找出問題？",
     "options": [
       "(A) 測試纜線的資料速度",
@@ -1265,7 +1265,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 98,
+    id: 98,
     "question": "只會將單點傳播框架，傳送至一個目的地連接 port？",
     "options": [
       "(A) 交換器",
@@ -1277,7 +1277,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 99,
+    id: 99,
     "question": "如果交換器不知道框架的傳送目標？",
     "options": [
       "(A) 會導致他濫發框架至各個連接 port",
@@ -1290,7 +1290,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 100,
+    id: 100,
     "question": "你任職於某公司，公司總裁回報他的有線網路印表機無法運作，為了測試線路你必須知道插孔插在跳線面板的什麼位置，但是沒有任何標籤在主配線架構 MDF中你發現一束 35條纜線，你應該使用哪種工具來分離出正確的纜線？",
     "options": [
       "(A) 音頻查線器",
@@ -1303,7 +1303,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 101,
+    id: 101,
     "question": "你任職於某公司，財務部門抱怨說存取公司網路時資料速度很慢，該部門的其中一部電腦顯示連線只有 100Mbps 但該線路應該是 1000Mbps 你應該使用哪個網路硬體工具來判斷纜線是否能達到 1000Mbps 全雙工傳輸？",
     "options": [
       "(A) 纜線測試器",
@@ -1316,7 +1316,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 102,
+    id: 102,
     "question": "需要哪種硬體才能夠將 LAN正確連線到 WAN？",
     "options": [
       "(A) 路由器",
@@ -1329,7 +1329,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 103,
+    id: 103,
     "question": "交換器的兩個重要特性？",
     "options": [
       "(A) 交換器造成的資料衝突比集線器多",
@@ -1342,7 +1342,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 104,
+    id: 104,
     "question": "在無線路由器上 SSID是？",
     "options": [
       "(A) 預設系統管理員帳號",
@@ -1355,7 +1355,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 105,
+    id: 105,
     "question": "如何更新路由器的靜態路由表？",
     "options": [
       "(A) 藉由監視相鄰子網路",
@@ -1368,7 +1368,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 106,
+    id: 106,
     "question": "你正在嘗試存取網際網路上的音樂分享服務，位於 IP 位址 173.194.75.105。你正在連線時發生錯誤，你對伺服器執行追蹤路由，收到下圖所示的輸出，評估本圖後，追蹤路由中的每個躍點都是？",
     "options": [
       "(A) 防火牆",
@@ -1380,7 +1380,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 107,
+    id: 107,
     "question": "具備容錯功能的是？",
     "options": [
       "(A) 動態路由",
@@ -1393,7 +1393,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 108,
+    id: 108,
     "question": "哪個實體網路拓樸，藉由提供備援通訊路徑，來提供容錯通信？",
     "options": [
       "(A) 環狀",
@@ -1406,7 +1406,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 109,
+    id: 109,
     "question": "網狀網路拓樸具有哪兩個特性？",
     "options": [
       "(A) 佈線需求低於星形或環狀拓樸",
@@ -1419,7 +1419,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 110,
+    id: 110,
     "question": "你認識一個擁有 15台電腦的小型辦公室，當地的 ISP提供了單一功用 IP位址，您必須讓 15台電腦，都擁有網際網路存取能力，應該使用哪個路由器？",
     "options": [
       "(A) RIP",
@@ -1432,7 +1432,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 111,
+    id: 111,
     "question": "建築物與建築物之間的網路連線是 550公尺，而且線路發生插入損失。應該用哪種工具來測試衰減。",
     "options": [
       "(A) 光時域反射計",
@@ -1445,7 +1445,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 112,
+    id: 112,
     "question": "哪種網路裝置，會讓工作群組中的電腦相互連線、能夠從遠端進行設定，並且提供最佳的輸送量？",
     "options": [
       "(A) 受管理的交換器",
@@ -1458,105 +1458,105 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 113,
+    id: 113,
     "type": "truefalse",
     "question": "RIP自動從其他 RIP路由器取得網路的資訊，藉以將這些網路新增至路由表",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 114,
+    id: 114,
     "type": "truefalse",
     "question": "當RIP芳鄰刪除路由時，RIP會自動從路由表移除這些路由",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 115,
+    id: 115,
     "type": "truefalse",
     "question": "RIP會根據頻寬和可用性判斷路由",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 116,
+    id: 116,
     "type": "truefalse",
     "question": "OSPF使用頻寬和延遲做為路由計量",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 117,
+    id: 117,
     "type": "truefalse",
     "question": "RIP導出路由可以包含最多 15個的躍點",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 118,
+    id: 118,
     "type": "truefalse",
     "question": "OSPF根據變更情況更新路由表所需的時間比RIP所需更久",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 119,
+    id: 119,
     "type": "truefalse",
     "question": "廣播路由變更時，RIP產生的更新流量比 OSPF產生的還多",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 120,
+    id: 120,
     "type": "truefalse",
     "question": "交換器只會將單點傳播封包傳送至一個目的地連接埠",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 121,
+    id: 121,
     "type": "truefalse",
     "question": "如果交換器不知道封包的傳送目標，會導致連接埠湧入封包",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 122,
+    id: 122,
     "type": "truefalse",
     "question": "交換器只會將傳播封包傳送至上行連接埠",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 123,
+    id: 123,
     "type": "truefalse",
     "question": "路由可以包含最多 15個躍點",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 124,
+    id: 124,
     "type": "truefalse",
     "question": "路由變更會立即透過網路進行廣播",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 125,
+    id: 125,
     "type": "truefalse",
     "question": "路由管理會隨著網路擴大而變得更有效率",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 126,
+    id: 126,
     "type": "truefalse",
     "question": "路由是根據所需的躍點數目來計算",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 127,
+    id: 127,
     "question": "「實體拓樸是由透過個別纜線連接到中央集線器的裝置所定義」描述的是哪種網路拓撲？",
     "options": [
       "(A) 星形",
@@ -1568,7 +1568,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 128,
+    id: 128,
     "question": "哪種網路拓撲是 FDDI和 SONET所使用的實體拓樸？",
     "options": [
       "(A) 星形",
@@ -1580,7 +1580,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 129,
+    id: 129,
     "question": "公用網際網路基礎的實體拓樸是哪一種？",
     "options": [
       "(A) 星形",
@@ -1592,7 +1592,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 130,
+    id: 130,
     "question": "網路頻寬 (bandwidth) 指的是同一時間內，網路資料傳輸的速率，下列何者是其常用的單位？",
     "options": [
       "(A) BPS",
@@ -1605,7 +1605,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 131,
+    id: 131,
     "question": "下列設備中，何者係採用半雙工 (half-duplex) 的模式進行通訊傳輸？",
     "options": [
       "(A) 手機",
@@ -1618,7 +1618,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 132,
+    id: 132,
     "question": "在不同時間可作雙向傳輸，當某一方處於接收狀況時就不能傳送資料是？",
     "options": [
       "(A) 區域網路 (LAN)",
@@ -1631,7 +1631,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 133,
+    id: 133,
     "question": "對於雙絞線、同軸電纜和光纖作為有線傳輸媒介的比較，下列敘述，何者不正確？",
     "options": [
       "(A) 同軸電纜抗雜訊力較雙絞線為佳",
@@ -1644,7 +1644,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 134,
+    id: 134,
     "question": "下列何種數據通信 (Data Communication) 傳輸媒體，具有最佳的雜訊隔離、安全性與傳輸效率？",
     "options": [
       "(A) 同軸電纜",
@@ -1657,7 +1657,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 135,
+    id: 135,
     "question": "全球定位系統主要是利用下列哪一項網路傳輸媒介？",
     "options": [
       "(A) 微波",
@@ -1670,7 +1670,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 136,
+    id: 136,
     "question": "下列何者是一種無線網路的傳輸媒介？",
     "options": [
       "(A) 光纖",
@@ -1683,7 +1683,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 137,
+    id: 137,
     "question": "使用於區域網路的雙絞線，是每對銅線兩兩纏繞在一起，外面用耐磨的絕緣材料包裹而成，請問該雙絞線內含幾對銅線？",
     "options": [
       "(A) 1 對",
@@ -1696,7 +1696,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 138,
+    id: 138,
     "question": "下列敘述何者是錯誤的？",
     "options": [
       "(A) 衛星傳輸是一種無線傳輸的方式",
@@ -1709,7 +1709,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 139,
+    id: 139,
     "question": "下列哪一種傳輸媒體的有效傳輸距離最短，且易受地形地物之干擾？",
     "options": [
       "(A) 光纖",
@@ -1722,7 +1722,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 140,
+    id: 140,
     "question": "下列何種區域網路 (Local Area Network) 的佈線方式，係各電腦間經由中央控制設備 (例如：集線器或伺服器) 連繫，而易於集中管理？",
     "options": [
       "(A) 星狀拓樸",
@@ -1735,7 +1735,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 141,
+    id: 141,
     "question": "下列敘述何者正確？",
     "options": [
       "(A) 透過網路電話聊天是一種半雙工的資料傳輸方式",
@@ -1748,7 +1748,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 142,
+    id: 142,
     "question": "關於以 IEEE 802.11為基礎的無線區域網路 (Wireless Local Area Network, WLAN)，下列敘述何者正確？",
     "options": [
       "(A) 其通訊協定又可分為 802.11 a / 802.11 b / 802.11 g / 802.11 n，其中以 802.11 a的「最大傳輸速度」的數值是最大的",
@@ -1761,7 +1761,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 143,
+    id: 143,
     "question": "下列有關類比訊號與數位訊號的比較，何者正確？",
     "options": [
       "(A) 數位訊號較容易受到電磁干擾",
@@ -1774,7 +1774,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 144,
+    id: 144,
     "question": "下列關於在乙太網路中，所使用的雙絞線 (UTP) 和同軸電纜的敘述，何者正確？",
     "options": [
       "(A) 雙絞線等級 1的傳輸速率，比雙絞線等級 5的傳輸速率高",
@@ -1787,7 +1787,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 145,
+    id: 145,
     "question": "下列有關乙太網路的敘述，何者正確？",
     "options": [
       "(A) 通常是以衛星通訊作為媒介",
@@ -1800,7 +1800,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 146,
+    id: 146,
     "question": "10BaseT的乙太網路的傳輸速率是？",
     "options": [
       "(A) 每秒 10Mega bits",
@@ -1813,7 +1813,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 147,
+    id: 147,
     "question": "乙太網路採用 10BaseT傳輸規格，其中字母 T是代表什麼意義？",
     "options": [
       "(A) 雙絞線",
@@ -1826,7 +1826,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 148,
+    id: 148,
     "question": "有關藍牙 (Bluetooth) 技術的敘述，下列何者正確？",
     "options": [
       "(A) 主要使用紅外線傳輸",
@@ -1839,7 +1839,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 149,
+    id: 149,
     "question": "以下哪一項名詞非屬於乙太區域網路的線材或界面？",
     "options": [
       "(A) UTP",
@@ -1852,7 +1852,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 150,
+    id: 150,
     "question": "以下哪一類無線通訊協定已經成為現有無線區域網路的主流？",
     "options": [
       "(A) 802.11",
@@ -1865,7 +1865,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 151,
+    id: 151,
     "question": "下列何者為無線通訊的協定？",
     "options": [
       "(A) RS–232",
@@ -1878,7 +1878,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 152,
+    id: 152,
     "question": "目前無線區域網路 (Wireless LAN) 使用的通訊協定是：",
     "options": [
       "(A) 802.2",
@@ -1891,7 +1891,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 153,
+    id: 153,
     "question": "請問無線電視台至家中電視其信號傳輸之方式，係採用下列哪一種？",
     "options": [
       "(A) 全雙工",
@@ -1904,7 +1904,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 154,
+    id: 154,
     "question": "個人電腦上的 RJ-45網路介面，可連接到下列何種網路？",
     "options": [
       "(A) 無線網路",
@@ -1917,7 +1917,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 155,
+    id: 155,
     "question": "下列何者是無線區域網路 (WLAN) 通訊無法避免的缺點？",
     "options": [
       "(A) 無線網路節點無法移動",
@@ -1930,7 +1930,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 156,
+    id: 156,
     "question": "下列何者不屬於無線網路的範疇？",
     "options": [
       "(A) IEEE 802.11b",
@@ -1943,7 +1943,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 157,
+    id: 157,
     "question": "「藍牙 (Bluetooth)」是屬於下列哪一方面的技術？",
     "options": [
       "(A) 數位影像",
@@ -1956,7 +1956,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 158,
+    id: 158,
     "question": "下列關於GPRS、802.11b、WAP (Wireless Application Protocol) 及藍牙 (Bluetooth) 的敘述，何者不正確？",
     "options": [
       "(A) 四者之中，藍牙的有效傳輸距離最短",
@@ -1969,7 +1969,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 159,
+    id: 159,
     "question": "RFID (radio frequency identification) 是一種通過無線電波識別特定物品的技術，下列何者不是使用RFID技術的優點？",
     "options": [
       "(A) 可進行商品的追蹤",
@@ -1982,7 +1982,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 160,
+    id: 160,
     "question": "下列何者最符合「藍牙」技術的目的？",
     "options": [
       "(A) 讓資訊設備無線傳輸資料",
@@ -1995,7 +1995,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 161,
+    id: 161,
     "question": "下列何者為美國電機電子工程師協會 (IEEE) 所制訂的無線區域網路標準？",
     "options": [
       "(A) 802.3",
@@ -2008,7 +2008,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 162,
+    id: 162,
     "question": "下列何者是無線區域網路 (WLAN) 通訊不容易避免的缺點？",
     "options": [
       "(A) 無線網路節點無法移動",
@@ -2021,7 +2021,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 163,
+    id: 163,
     "question": "以下哪一種無線通訊協定之傳輸距離可達50公里、傳輸速度可達75Mbps？",
     "options": [
       "(A) Wi-Fi",
@@ -2034,7 +2034,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 164,
+    id: 164,
     "question": "傳統類比式有線電視，一條線路能夠同時傳送多個視訊頻道，此種訊號傳送方式稱為：",
     "options": [
       "(A) 基頻 (base band)",
@@ -2047,7 +2047,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 165,
+    id: 165,
     "question": "下列何者不屬於「寬頻」上網？",
     "options": [
       "(A) 56K 數據機撥接上網",
@@ -2060,7 +2060,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 166,
+    id: 166,
     "question": "在「數位的傳輸頻道」中，其頻道的「頻寬」係指下列何者？",
     "options": [
       "(A) 傳輸線的粗細",
@@ -2073,7 +2073,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 167,
+    id: 167,
     "question": "在「數位的傳輸方式」中，其「傳輸速率」係指下列何者？",
     "options": [
       "(A) 傳輸線的粗細",
@@ -2086,7 +2086,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 168,
+    id: 168,
     "question": "下列敘述何者是錯誤的？",
     "options": [
       "(A) 衛星傳輸是一種無線傳輸的方式",
@@ -2099,7 +2099,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 169,
+    id: 169,
     "question": "在通訊科技發達的今日，網路已由基頻 (Baseband) 邁向寬頻 (Broadband)。下列有關基頻與寬頻的敘述，何者不正確？",
     "options": [
       "(A) 基頻或寬頻係取決於使用的傳輸媒體",
@@ -2112,7 +2112,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 170,
+    id: 170,
     "question": "在同一時間內，一條傳輸線允許傳送多個通道之訊號的傳輸模式，稱之為？",
     "options": [
       "(A) 窄頻",
@@ -2125,7 +2125,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 171,
+    id: 171,
     "question": "在同一時間內，一條傳輸線只能傳送單一訊號的傳輸模式，稱之為？",
     "options": [
       "(A) 窄頻",
@@ -2138,7 +2138,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 172,
+    id: 172,
     "question": "網際網路 (Internet) 是依據下列哪一種資料交換技術運作？",
     "options": [
       "(A) 分封交換 (packet switching)",
@@ -2151,7 +2151,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 173,
+    id: 173,
     "question": "在通訊科技發達的今日，網路已由基頻 (Baseband) 邁向寬頻 (Broadband)。下列有關基頻與寬頻的敘述，何者不正確？",
     "options": [
       "(A) 寬頻網路可以提供遠距教學、虛擬實境與線上電玩等服務",
@@ -2164,7 +2164,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 174,
+    id: 174,
     "question": "下列何者不屬於「寬頻」上網？",
     "options": [
       "(A) 56K 數據機撥接上網",
@@ -2177,7 +2177,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 175,
+    id: 175,
     "question": "下列何者是利用有線電視的頻道做為資料傳輸的媒介？",
     "options": [
       "(A) ISDN",
@@ -2190,7 +2190,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 176,
+    id: 176,
     "question": "下列何者不屬於通訊媒介中的無線網路？",
     "options": [
       "(A) 光纖",
@@ -2203,7 +2203,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 177,
+    id: 177,
     "question": "以下對寬頻技術的形容，何者為非？",
     "options": [
       "(A) 同樣是使用家中電話線，申請ADSL後，能同時打電話及上網，是拜寬頻技術之賜",
@@ -2216,7 +2216,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 178,
+    id: 178,
     "question": "通訊頻道想要獲取最佳效能，應該滿足下列哪一個條件？",
     "options": [
       "(A) 頻寬要大，延遲時間要短",
@@ -2229,7 +2229,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 179,
+    id: 179,
     "question": "下列有關基頻傳輸 (Baseband Transmission) 與寬頻傳輸 (Broadband Transmission) 的敘述何者錯誤？",
     "options": [
       "(A) 基頻傳輸使用數位訊號來傳送資料",
@@ -2242,7 +2242,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 180,
+    id: 180,
     "question": "若網路傳輸速度是56Kbps，每分鐘可傳送多少資料量？",
     "options": [
       "(A) 56Kbits",
@@ -2255,7 +2255,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 181,
+    id: 181,
     "question": "關於我們平日所使用的「健保IC卡」，下列敘述何者正確？",
     "options": [
       "(A) 需透過接觸方式讀取資料",
@@ -2268,7 +2268,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 182,
+    id: 182,
     "question": "關於電腦設備之間的傳輸模式，下列敘述何者正確？",
     "options": [
       "(A) 電腦和SATA磁碟機之間為全雙工、電腦和電腦之間為全雙工、電腦和鍵盤之間為單工",
@@ -2281,7 +2281,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 183,
+    id: 183,
     "question": "某8位元串列通訊協定速度為9600bps，且每傳送一位元組，另需使用一個起始位元和一個結束位元，使用此通訊協定來傳送4800Bytes的資料，需費時多少秒？",
     "options": [
       "(A) 5.5 秒",
@@ -2294,7 +2294,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 184,
+    id: 184,
     "question": "下列哪一種應用程式可撥打市話與他人即時交談？",
     "options": [
       "(A) Facebook",
@@ -2307,7 +2307,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 185,
+    id: 185,
     "question": "微網誌是一種允許使用者用更簡短的文字，來發表自己的心情與生活事物的訊息。以下何者不是微網誌？",
     "options": [
       "(A) 微博 (Weibo)",
@@ -2320,7 +2320,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 186,
+    id: 186,
     "question": "大雄家中網路下載/上傳的速率為6Mbps/2Mbps，他從教育部網站下載一個12MBytes的檔案後，立刻將該檔案上傳給小明同學。下載與上傳該檔案資料總共約需要多少的資料傳輸時間？",
     "options": [
       "(A) 8 秒",
@@ -2333,7 +2333,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 187,
+    id: 187,
     "question": "下列哪一種通信媒體最適用於長距離直線傳播？",
     "options": [
       "(A) 廣播無線電波",
@@ -2346,7 +2346,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 188,
+    id: 188,
     "question": "ADSL的頻寬速度通常以「下載速度/上傳速度」來表示。在不同通訊標準中，會有不同下載速度/上傳速度，下列何者為不正確的頻寬速度？",
     "options": [
       "(A) 1.5Mbps/8Mbps",
@@ -2359,7 +2359,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 189,
+    id: 189,
     "question": "以固定專線上網費用昂貴，但傳輸速度快且品質穩定，下列何者最適合？",
     "options": [
       "(A) ADSL",
@@ -2372,7 +2372,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 190,
+    id: 190,
     "question": "以下有關連接網際網路的方式說明，何者正確？",
     "options": [
       "(A) ADSL採用非對稱速率傳輸模式，例如速率標示為5M/384K的ADSL網路系統，其下載速率可達5Mbps，上傳速率可達384Kbps",
@@ -2385,7 +2385,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 191,
+    id: 191,
     "question": "關於Radio Frequency IDentification (RFID) 無線傳輸技術現有應用之情境，下列何者尚未被廣泛應用？",
     "options": [
       "(A) 賣場的商品販售",
@@ -2398,7 +2398,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 192,
+    id: 192,
     "question": "行動支付時代來臨，運用近場通訊 (Near Field Communication, NFC) 的手機錢包與下列哪一項技術最相關？",
     "options": [
       "(A) 全球互通微波存取 (WiMAX)",
@@ -2411,7 +2411,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 193,
+    id: 193,
     "question": "在無線網路中，SSID的功用是什麼？",
     "options": [
       "(A) 無線基地台 (AP) 廣播識別碼",
@@ -2424,7 +2424,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 194,
+    id: 194,
     "question": "哪種網路裝置主要功能是將媒體存取控制 (MAC) 位址與連接埠產生關聯？",
     "options": [
       "(A) 數據機",
@@ -2437,7 +2437,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 195,
+    id: 195,
     "question": "哪種媒體類型最不容易受到電磁、射頻等外部干擾的影響？",
     "options": [
       "(A) 光纖",
@@ -2450,7 +2450,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 196,
+    id: 196,
     "question": "哪一種無線網路的驗證方法相對較為安全？",
     "options": [
       "(A) MAC",
@@ -2463,7 +2463,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 197,
+    id: 197,
     "question": "透過一個在唯一地點的私人無線網路交換資料，是哪一種類型網路？",
     "options": [
       "(A) 外部網路",
@@ -2476,7 +2476,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 198,
+    id: 198,
     "question": "要求你設定電腦網路，需要設定周邊網路以保護內部私人網路安全，客戶將會連線至周邊網路應該在周邊網路中加入哪兩個選項？",
     "options": [
       "(A) 網頁伺服器",
@@ -2490,7 +2490,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 199,
+    id: 199,
     "question": "設定兩個辦公室之間的連線，你想要有最快的連線寬頻，應該使用何種類型連線？",
     "options": [
       "(A) T1",
@@ -2503,7 +2503,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 200,
+    id: 200,
     "question": "如果 802.11g無線網路受到干擾，可能原因為下列哪項？",
     "options": [
       "(A) 無線電話",
@@ -2516,7 +2516,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 201,
+    id: 201,
     "question": "在無線網路中哪種標準包含對 RADIUS驗證伺服器的支援？",
     "options": [
       "(A) 802.1X",
@@ -2529,7 +2529,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 202,
+    id: 202,
     "question": "路由器的功能是什麼？",
     "options": [
       "(A) 在不同媒體類型間提供連線",
@@ -2542,7 +2542,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 203,
+    id: 203,
     "question": "下列何者可能會對 UTP纜線傳輸造成外部干擾？",
     "options": [
       "(A) 行動電話",
@@ -2555,7 +2555,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 204,
+    id: 204,
     "question": "使用 STP來代替 UTP纜線架設網路的理由是什麼？",
     "options": [
       "(A) 穿越外部干擾很高的區域",
@@ -2568,7 +2568,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 205,
+    id: 205,
     "question": "100BASE-TX網路的最低線材需求是下列何者？",
     "options": [
       "(A) Cat. 6 UTP纜線",
@@ -2581,7 +2581,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 206,
+    id: 206,
     "question": "家庭網路纜線至少需要支援 300Mbps時，下列哪種規格最便宜？",
     "options": [
       "(A) Cat. 3",
@@ -2594,7 +2594,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 207,
+    id: 207,
     "question": "哪一協助可將 IP位址對應至 MAC位址？",
     "options": [
       "(A) RIP",
@@ -2607,7 +2607,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 208,
+    id: 208,
     "question": "在網路中配置多個 VLAN的原因之一是下列哪個？",
     "options": [
       "(A) 增加可用 IP位址數量",
@@ -2620,7 +2620,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 209,
+    id: 209,
     "question": "媒體存取控制 MAC位址的用途是？",
     "options": [
       "(A) 管理共用網路資源的權限",
@@ -2633,7 +2633,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 210,
+    id: 210,
     "question": "哪個是無線網路訊號衰減的原因？",
     "options": [
       "(A) 訊號的加密方式",
@@ -2646,7 +2646,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 211,
+    id: 211,
     "question": "需要在兩個相距六英里/十公里地點之間安裝網路纜線，需使用哪個項目？",
     "options": [
       "(A) 多模光纖",
@@ -2659,7 +2659,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 212,
+    id: 212,
     "question": "1000BASE-T標準的纜線最大長度？",
     "options": [
       "(A) 1000m",
@@ -2672,7 +2672,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 213,
+    id: 213,
     "question": "位址解析通訊協定 ARP表是用來將何者對應至主機名稱",
     "options": [
       "(A) MAC位址",
@@ -2685,7 +2685,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 214,
+    id: 214,
     "question": "光纖纜線具有哪兩個特性",
     "options": [
       "(A) 端點連接器需要拋光",
@@ -2699,7 +2699,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 215,
+    id: 215,
     "question": "哪種無線加密最容易遭到攔截和解密？",
     "options": [
       "(A) WEP",
@@ -2712,7 +2712,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 216,
+    id: 216,
     "question": "無線網路有什麼安全性的疑慮需要考量？",
     "options": [
       "(A) 頻率調變的問題",
@@ -2725,7 +2725,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 217,
+    id: 217,
     "question": "某間大學具有各種位置之間的網路連接，請問下列何種適用 T3連線？",
     "options": [
       "(A) 伺服器與主校區伺服器機房的網路",
@@ -2738,7 +2738,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 218,
+    id: 218,
     "question": "你必須在你的公司製造工廠，鋪設四段乙太網路，每段約為 125英尺/38公尺，每段都會經過重型製造設備附近區域，你必須要確保降低干擾程度，請問你應該要選擇哪一種類型的纜線？",
     "options": [
       "(A) STP Cat5E",
@@ -2751,7 +2751,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 219,
+    id: 219,
     "question": "在兩個相距約 6英里/10公里的地點之間，安裝網路纜線，你應該要選擇？",
     "options": [
       "(A) 多重模式光纖",
@@ -2764,7 +2764,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 220,
+    id: 220,
     "question": "使用 STP，而不使用 UTP纜線，來架設網路擴充線路的理由是什麼？",
     "options": [
       "(A) 想降低安裝成本",
@@ -2777,7 +2777,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 221,
+    id: 221,
     "question": "將 mac位址解析為 ip位址？",
     "options": [
       "(A) TCP",
@@ -2789,7 +2789,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 222,
+    id: 222,
     "question": "下列物聯網的敘述何者正確？",
     "options": [
       "(A) IOT裝置有 IP位址",
@@ -2801,98 +2801,98 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 223,
+    id: 223,
     "type": "truefalse",
     "question": "802.11n支援使用多重天線進行同時多重輸出 (MIMO)",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 224,
+    id: 224,
     "type": "truefalse",
     "question": "802.11n會使用訊息框聚合 (frame aggregation) 來提高效率",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 225,
+    id: 225,
     "type": "truefalse",
     "question": "802.11n會使用通道接合 (channel bonding) 來同時使用兩個通道，讓頻寬加倍",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 226,
+    id: 226,
     "type": "truefalse",
     "question": "臨機操作網路是對等式網路組態",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 227,
+    id: 227,
     "type": "truefalse",
     "question": "臨機操作網路支援 WEP，WPA跟 WPA2安全性",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 228,
+    id: 228,
     "type": "truefalse",
     "question": "無線存取點 WAP網路需要有線路由器或交換器，才能連線至有線網路",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 229,
+    id: 229,
     "type": "truefalse",
     "question": "無線存取點 WAP網路比臨機操作網路更安全",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 230,
+    id: 230,
     "type": "truefalse",
     "question": "無線橋接器會將乙太網路架構的裝置連接到網路",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 231,
+    id: 231,
     "type": "truefalse",
     "question": "無線橋接器會提高存取點的無線訊號強度",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 232,
+    id: 232,
     "type": "truefalse",
     "question": "無線橋接器永遠都是成對運作",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 233,
+    id: 233,
     "type": "truefalse",
     "question": "802.11ac與 802.11a/b/g/n回溯相容",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 234,
+    id: 234,
     "type": "truefalse",
     "question": "802.11ac WAP在 2.4GHz和 5GHz的頻帶上支援同時傳輸",
     "answer": "否",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 235,
+    id: 235,
     "type": "truefalse",
     "question": "802.11ac的最大頻寬是 1.3Gbps",
     "answer": "是",
     "source": "ITS考題觀摩"
   },
   {
-    "id": 236,
+    id: 236,
     "question": "10G BaseT單一模式光纖支援的最大纜線長度是多少？",
     "options": [
       "(A) 40km",
@@ -2905,7 +2905,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 237,
+    id: 237,
     "question": "10G BaseT CAT6支援的最大纜線長度是多少？",
     "options": [
       "(A) 40km",
@@ -2918,7 +2918,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 238,
+    id: 238,
     "question": "1000 BaseT CAT6支援的最大纜線長度是多少？",
     "options": [
       "(A) 40km",
@@ -2931,7 +2931,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 239,
+    id: 239,
     "question": "10G BaseT CAT5支援的最大纜線長度是多少？",
     "options": [
       "(A) 40km",
@@ -2944,7 +2944,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 240,
+    id: 240,
     "question": "「不需連線的訊息架構通訊協定，提供盡力而為的服務」",
     "options": [
       "(A) UDP",
@@ -2956,7 +2956,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 241,
+    id: 241,
     "question": "「連線導向的通訊協定，提供保證的服務」",
     "options": [
       "(A) UDP",
@@ -2968,7 +2968,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 242,
+    id: 242,
     "question": "「將 IP位址解析為 MAC位址」",
     "options": [
       "(A) UDP",
@@ -2980,7 +2980,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 243,
+    id: 243,
     "question": "一般常見的 IP位址是由幾個位元組 (byte) 所組成？",
     "options": [
       "(A) 2",
@@ -2993,7 +2993,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 244,
+    id: 244,
     "question": "有關網際網路通訊協定的敘述，下列何者不正確？",
     "options": [
       "(A) IP為 Internet的網路層通訊協定",
@@ -3006,7 +3006,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 245,
+    id: 245,
     "question": "網際網路的 IP位址長度係由多少位元所組成？",
     "options": [
       "(A) 16",
@@ -3019,7 +3019,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 246,
+    id: 246,
     "question": "已知網際網路 IP位址係由四組數字所組成，請問下列表示法中何者是錯誤的？",
     "options": [
       "(A) 140.6.36.300",
@@ -3032,7 +3032,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 247,
+    id: 247,
     "question": "IP位址為 255.255.255.0通常用來做什麼功用？",
     "options": [
       "(A) 自我迴路測試",
@@ -3045,7 +3045,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 248,
+    id: 248,
     "question": "下列何者是以 4個位元組的二進制數字來識別 Internet上之主機位址的表示方法？",
     "options": [
       "(A) TCP",
@@ -3058,7 +3058,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 249,
+    id: 249,
     "question": "「網域名稱伺服器」的英文簡稱為何？",
     "options": [
       "(A) ISDN",
@@ -3071,7 +3071,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 250,
+    id: 250,
     "question": "Class A網路的 IP網址內定的子網路遮罩為？",
     "options": [
       "(A) 255.0.0.0",
@@ -3084,7 +3084,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 251,
+    id: 251,
     "question": "下列何者是屬於 Class C網路的 IP？",
     "options": [
       "(A) 120.80.40.20",
@@ -3097,7 +3097,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 252,
+    id: 252,
     "question": "下列何者屬於 IPv4 B類 (classB) 的網址？",
     "options": [
       "(A) 50.50.50.50",
@@ -3110,7 +3110,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 253,
+    id: 253,
     "question": "下列敘述，何者正確？",
     "options": [
       "(A) 網際網路 (Internet) 上每一個網頁都有一個參考位址稱為 URL",
@@ -3123,7 +3123,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 254,
+    id: 254,
     "question": "請問目前使用的 IPv4之位址是多少位元 (bit)？",
     "options": [
       "(A) 32",
@@ -3136,7 +3136,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 255,
+    id: 255,
     "question": "TCP/IP的通訊協定中，兩部電腦的 IP位址是否屬於同一個子網路，是依據下列何者來決定？",
     "options": [
       "(A) 網域名稱伺服器 (domain name server)",
@@ -3149,7 +3149,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 256,
+    id: 256,
     "question": "IP (internet protocol) 位址分為公開的 IP位址與私人的 IP位址兩種，下列哪個 IP位址為公開 (合法)，且可以用來連線到 Internet的 IP位址？",
     "options": [
       "(A) 10.20.10.5",
@@ -3162,7 +3162,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 257,
+    id: 257,
     "question": "URL (uniform resource locator) 是用來表示某個網站或檔案在網際網路中，獨一無二的位址。下列何者屬於 URL的一部分？",
     "options": [
       "(A) 檔案複製、檔案儲存",
@@ -3175,7 +3175,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 258,
+    id: 258,
     "question": "設定一個 B級 (class B) 的 IP位址時，使用下列何項網路遮罩 (mask)？",
     "options": [
       "(A) 255.0.0.0",
@@ -3188,7 +3188,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 259,
+    id: 259,
     "question": "IP位址是由幾個 0～255的數字所組成的？",
     "options": [
       "(A) 1個",
@@ -3201,7 +3201,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 260,
+    id: 260,
     "question": "下列哪一個是合法的 IP，可設定給一台伺服器？",
     "options": [
       "(A) 203.64.120.1",
@@ -3214,7 +3214,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 261,
+    id: 261,
     "question": "下列哪一個是正確的 IP位址？",
     "options": [
       "(A) 140.124.3",
@@ -3227,7 +3227,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 262,
+    id: 262,
     "question": "TCP/IP是一種？",
     "options": [
       "(A) 網路周邊設備",
@@ -3240,7 +3240,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 263,
+    id: 263,
     "question": "下列哪一種網路設備，其主要運作層次為「網路層」？",
     "options": [
       "(A) 橋接器 (bridge)",
@@ -3253,7 +3253,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 264,
+    id: 264,
     "question": "將資料轉換成傳輸媒介所能負載、傳遞的電子訊號，並經由網路設備傳送出去，是用於開放系統連結 (OSI) 七層架構中的哪一層？",
     "options": [
       "(A) 傳輸層",
@@ -3266,7 +3266,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 265,
+    id: 265,
     "question": "目前 IP 位址 (IPv4) 被區分為幾個等級 (class)？",
     "options": [
       "(A) 3",
@@ -3279,7 +3279,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 266,
+    id: 266,
     "question": "下列哪一個 IP 位址是屬於 B 級網路的等級？",
     "options": [
       "(A) 62.100.5.2",
@@ -3292,7 +3292,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 267,
+    id: 267,
     "question": "下列何者不是 Windows XP 中「Internet Protocol (TCP / IP) 內容」的設定選項？",
     "options": [
       "(A) 子網路遮罩",
@@ -3305,7 +3305,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 268,
+    id: 268,
     "question": "關於網路中 CSMA / CD 協定，下列敘述何者不正確？",
     "options": [
       "(A) 連接到區域網路上各節點的電腦，都可以接收資料",
@@ -3318,7 +3318,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 269,
+    id: 269,
     "question": "OSI通訊標準中，下列哪一層最靠近應用層？",
     "options": [
       "(A) 網路層",
@@ -3331,7 +3331,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 270,
+    id: 270,
     "question": "電子郵件的傳輸協定 SMTP、POP3、IMAP，是屬於下列哪一層的傳輸協定？",
     "options": [
       "(A) 應用層",
@@ -3344,7 +3344,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 271,
+    id: 271,
     "question": "在 OSI參考模型 (Open System Interconnection Reference Model) 的七層架構中，下列哪一層主要負責規範各項網路服務的使用者介面？",
     "options": [
       "(A) 應用層",
@@ -3357,7 +3357,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 272,
+    id: 272,
     "question": "開放系統連接模型 (Open System Interconnection Reference Model, 簡稱 OSI) 是用來規範電腦網路間的通訊協定。OSI模型共分為七層，請問負責為封包選擇網路傳送路徑的工作是由哪一層所負責？",
     "options": [
       "(A) 實體層 (Physical Layer)",
@@ -3370,7 +3370,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 273,
+    id: 273,
     "question": "在 OSI網路架構中，確保資料於接收端能依發送端的編序正確組合的是屬於哪一層？",
     "options": [
       "(A) 資料鏈結層",
@@ -3383,7 +3383,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 274,
+    id: 274,
     "question": "下列關於開放式系統互連 (Open System Interconnection, OSI) 參考模型的描述，何者錯誤？",
     "options": [
       "(A) 該模型是由 ISO組織制定，是一個用來規範不同電腦系統之間進行通訊的原則",
@@ -3396,7 +3396,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 275,
+    id: 275,
     "question": "網路 OSI模型第二層的交換器 (Switch) 設備，依據下列哪種位址來轉換及傳送訊框 (Frame)？",
     "options": [
       "(A) 實體位址 (MAC)",
@@ -3409,7 +3409,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 276,
+    id: 276,
     "question": "ClassA等級的 IP位址從 10.0.0.251至 10.0.1.5共有幾個 IP位址？",
     "options": [
       "(A) 10個",
@@ -3422,7 +3422,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 277,
+    id: 277,
     "question": "下列何項是屬於 CLASSC等級的 IP位址？",
     "options": [
       "(A) 10.16.1.1",
@@ -3435,7 +3435,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 278,
+    id: 278,
     "question": "IPv6所能表示的 IP位址數量是 IPv4所能表示 IP位址數量的多少倍？",
     "options": [
       "(A) 4",
@@ -3448,7 +3448,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 279,
+    id: 279,
     "question": "下列對於網際網路協定 IP (Internet Protocol) 的描述何者正確？",
     "options": [
       "(A) 全世界的 IP位址可以分為 A,B,C,D四種等級 (Class)",
@@ -3461,7 +3461,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 280,
+    id: 280,
     "question": "某一部電腦中的網路介面卡 IP位址設定為 192.168.1.10，網路遮罩為 255.255.255.128，關於該電腦網路連接與組態，下列敘述何者正確？",
     "options": [
       "(A) 192.168.1.10一定是 WiFi存取點 (WiFi Access Point) 派發的動態 IPv4位址",
@@ -3474,7 +3474,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 281,
+    id: 281,
     "question": "假設有一網頁伺服器 (web server) 的 IP是 192.168.3.10，透過 8080埠號 (port) 提供網頁服務。若要請求這網頁伺服器的網頁服務，下列哪一個請求服務的格式是正確的？",
     "options": [
       "(A) http://192.168.3.10/8080/index.html",
@@ -3487,7 +3487,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 282,
+    id: 282,
     "question": "伺服器 D可以把內部使用的私有 IP位址轉成可連上網際網路的真實 IP位址。伺服器 D所提供的服務，下列何者最為適切？",
     "options": [
       "(A) NAT",
@@ -3500,7 +3500,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 283,
+    id: 283,
     "question": "下列關於各種通訊協定的敘述，何者正確？",
     "options": [
       "(A) TCP/IP協定是廣泛運用在網際網路的通訊協定，在 OSI架構中屬於網路層",
@@ -3513,7 +3513,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 284,
+    id: 284,
     "question": "關於在網路上使用 TCP/IP的協定傳輸封包時，下列敘述何者正確？",
     "options": [
       "(A) 為了提高傳輸效率，使用 TCP協定不會檢查封包是否錯誤或遺失，因此不會要求傳送端重傳",
@@ -3526,7 +3526,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 285,
+    id: 285,
     "question": "每一部主機在Internet上都有一個獨一無二的識別代號，此一代號稱為：",
     "options": [
       "(A) FTP位址",
@@ -3539,7 +3539,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 286,
+    id: 286,
     "question": "下列哪個 IP位址可以通過 Firewall的管制，直接在 Internet上流通？",
     "options": [
       "(A) 127.0.0.1",
@@ -3552,7 +3552,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 287,
+    id: 287,
     "question": "IP 位址基本上是由四組數字，以「.」符號隔開組成，請問每一組數字的最大值為何？",
     "options": [
       "(A) 128",
@@ -3565,7 +3565,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 288,
+    id: 288,
     "question": "下列哪個 IP位址，可作為本機測試用的 IP位址？",
     "options": [
       "(A) 0.0.0.0",
@@ -3578,7 +3578,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 289,
+    id: 289,
     "question": "在網際網路中，下列有關全球資訊網站的 IP (internet protocol) 位址何者正確？",
     "options": [
       "(A) 0.0.0",
@@ -3591,7 +3591,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 290,
+    id: 290,
     "question": "關於現在普遍使用的 IP位址的敘述，下列何者正確？",
     "options": [
       "(A) IP位址由四組字元串列組成，每組字元串列長度最長可達4個字元",
@@ -3604,7 +3604,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 291,
+    id: 291,
     "question": "下列 IP位址的寫法，何者正確？",
     "options": [
       "(A) 168.95.301.83",
@@ -3617,7 +3617,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 292,
+    id: 292,
     "question": "設定您電腦的 TCP/IP參數時輸入之 255.255.255.0，其作用是？",
     "options": [
       "(A) 自我迴路測試",
@@ -3630,7 +3630,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 293,
+    id: 293,
     "question": "下列 Internet 的 IP位址中，何者表示方法有誤？",
     "options": [
       "(A) 140.5.30.256",
@@ -3643,7 +3643,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 294,
+    id: 294,
     "question": "以下何者為合法之公共 (Public) IP 位址",
     "options": [
       "(A) 10.140.113.67 / 255.255.255.0",
@@ -3656,7 +3656,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 295,
+    id: 295,
     "question": "以下 IP位址中何者屬於 C級網路？",
     "options": [
       "(A) 99.192.168.1",
@@ -3669,7 +3669,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 296,
+    id: 296,
     "question": "以下 IP位址中何者屬於 B級網路？",
     "options": [
       "(A) 99.192.168.1",
@@ -3682,7 +3682,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 297,
+    id: 297,
     "question": "下列何者為網際網路上共用的通訊協定 (communication protocol)？",
     "options": [
       "(A) X modem",
@@ -3695,7 +3695,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 298,
+    id: 298,
     "question": "下列何者不是網路通訊協定？",
     "options": [
       "(A) NetBEUI",
@@ -3708,7 +3708,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 299,
+    id: 299,
     "question": "TCP通訊協定所提供的服務包括下列哪一項？",
     "options": [
       "(A) 不同主機的程序 (process) 之間的可靠資訊流傳輸",
@@ -3721,7 +3721,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 300,
+    id: 300,
     "question": "電腦網路之 OSI模型的資料鏈結層 (data link layer) 可以識別下列何者？",
     "options": [
       "(A) 網路卡的實體位址，也就是 MAC address",
@@ -3734,7 +3734,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 301,
+    id: 301,
     "question": "國際標準組織 (ISO) 制訂的開放式系統連接模型 (OSI) 中，下列哪一層是負責選擇封包的最佳傳輸路徑？",
     "options": [
       "(A) 資料鏈結層",
@@ -3747,7 +3747,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 302,
+    id: 302,
     "question": "TCP/IP通訊協定提供下列哪兩層的功能？",
     "options": [
       "(A) 應用層與傳輸層",
@@ -3760,7 +3760,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 303,
+    id: 303,
     "question": "下列何者不是傳輸層 (transport layer) 的通訊協定？",
     "options": [
       "(A) HTTP",
@@ -3773,7 +3773,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 304,
+    id: 304,
     "question": "在 OSI (open system interconnection) 模式中，資料經由網路傳輸時，其路由選擇 (routing) 的功能係由下列何種層級負責？",
     "options": [
       "(A) 應用層",
@@ -3786,7 +3786,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 305,
+    id: 305,
     "question": "ISO (國際標準組織) 制定 7層之 OSI網路模型，請問建立點對點的資料正確以及完整的傳輸服務工作，是在OSI模型當中的哪一層處理？",
     "options": [
       "(A) 資料連結層 (data link layer)",
@@ -3799,7 +3799,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 306,
+    id: 306,
     "question": "TCP/IP通訊協定中，TCP最接近開放式系統連結 (Open System Interconnection, OSI) 所定的網路七層結構中的哪一層？",
     "options": [
       "(A) 表達層 (presentation layer)",
@@ -3812,7 +3812,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 307,
+    id: 307,
     "question": "在網路，「光纖」(filber optic) 是屬於 ISO/OSI模型中的哪一層？",
     "options": [
       "(A) 網路層",
@@ -3825,7 +3825,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 308,
+    id: 308,
     "question": "集線器工作於 OSI 7層架構中的哪一層？",
     "options": [
       "(A) 實體層",
@@ -3838,7 +3838,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 309,
+    id: 309,
     "question": "大華平常習慣利用 Internet Explorer上網找資料，他使用的 Internet Explorer屬於國際標準組織 (ISO) 所規範的七層開放式系統連接模型 (OSI) 的哪一層？",
     "options": [
       "(A) 網路層 (Network Layer)",
@@ -3851,7 +3851,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 310,
+    id: 310,
     "question": "下列哪一項是網際網路 (Internet) 最基礎的通訊協定 (protocol)？",
     "options": [
       "(A) FTP",
@@ -3864,7 +3864,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 311,
+    id: 311,
     "question": "在 OSI七層網路通訊協定架構中，下列何層負責處理資料的轉換 (包括將資料編碼、壓縮、解壓縮、加密、解密等)，並建立上層可以使用的格式？",
     "options": [
       "(A) 資料連結層 (Data Link Layer)",
@@ -3877,7 +3877,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 312,
+    id: 312,
     "question": "下列有關 TCP/IP的敘述，何者正確？",
     "options": [
       "(A) IP主要工作是確保資料正確送達接收端，負責循序編碼和檢查錯誤",
@@ -3890,7 +3890,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 313,
+    id: 313,
     "question": "OSI網路七層 (OSI 7-Layer) 參考模型中，TCP協定所屬層級為：",
     "options": [
       "(A) 資料連結層",
@@ -3903,7 +3903,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 314,
+    id: 314,
     "question": "國際標準組織 (ISO) 所制定的開放式系統連結 (OSI) 參考模式中，下列哪一層最接近網路硬體？",
     "options": [
       "(A) 資料連結層",
@@ -3916,7 +3916,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 315,
+    id: 315,
     "question": "以下各選項均為 OSI的 7層通訊協定之一，請問居於四選項中最下層者為？",
     "options": [
       "(A) 網路層",
@@ -3929,7 +3929,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 316,
+    id: 316,
     "question": "以下各選項均為 OSI的 7層通訊協定之一，請問居於四者中最上層者為？",
     "options": [
       "(A) 網路層",
@@ -3942,7 +3942,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 317,
+    id: 317,
     "question": "下列有關 IP位址的敘述，何者正確？",
     "options": [
       "(A) 連接到網際網路的每一台裝置都必須具有固定的 IP位址",
@@ -3955,7 +3955,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 318,
+    id: 318,
     "question": "下列何者不是正確的 IP位址？",
     "options": [
       "(A) 210.121.8.32",
@@ -3968,7 +3968,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 319,
+    id: 319,
     "question": "下列 IP位址，何者屬於 IPv4 C類 (Class C)？",
     "options": [
       "(A) 120.120.120.120",
@@ -3981,7 +3981,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 320,
+    id: 320,
     "question": "一般常見的 IP位址是由幾個位元組 (byte) 所組成？",
     "options": [
       "(A) 2",
@@ -3994,7 +3994,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 321,
+    id: 321,
     "question": "有關網際網路通訊協定的敘述，下列何者不正確？",
     "options": [
       "(A) IP為 Internet的網路層通訊協定",
@@ -4007,7 +4007,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 322,
+    id: 322,
     "question": "網際網路的 IP位址長度係由多少位元所組成？",
     "options": [
       "(A) 16",
@@ -4020,7 +4020,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 323,
+    id: 323,
     "question": "已知網際網路 IP位址係由四組數字所組成，請問下列表示法中何者是錯誤的？",
     "options": [
       "(A) 140.6.36.300",
@@ -4033,7 +4033,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 324,
+    id: 324,
     "question": "IP位址為 255.255.255.0通常用來做什麼功用？",
     "options": [
       "(A) 自我迴路測試",
@@ -4046,7 +4046,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 325,
+    id: 325,
     "question": "下列何者是以 4個位元組的二進制數字來識別 Internet上之主機位址的表示方法？",
     "options": [
       "(A) TCP",
@@ -4059,7 +4059,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 326,
+    id: 326,
     "question": "「網域名稱伺服器」的英文簡稱為何？",
     "options": [
       "(A) ISDN",
@@ -4072,7 +4072,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 327,
+    id: 327,
     "question": "Class A網路的 IP網址內定的子網路遮罩為？",
     "options": [
       "(A) 255.0.0.0",
@@ -4085,7 +4085,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 328,
+    id: 328,
     "question": "下列何者是屬於 Class C網路的 IP？",
     "options": [
       "(A) 120.80.40.20",
@@ -4098,7 +4098,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 329,
+    id: 329,
     "question": "下列何者屬於 IPv4 B類 (classB) 的網址？",
     "options": [
       "(A) 50.50.50.50",
@@ -4111,7 +4111,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 330,
+    id: 330,
     "question": "下列敘述，何者正確？",
     "options": [
       "(A) 網際網路 (Internet) 上每一個網頁都有一個參考位址稱為 URL",
@@ -4124,7 +4124,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 331,
+    id: 331,
     "question": "請問目前使用的 IPv4之位址是多少位元 (bit)？",
     "options": [
       "(A) 32",
@@ -4137,7 +4137,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 332,
+    id: 332,
     "question": "TCP/IP的通訊協定中，兩部電腦的 IP位址是否屬於同一個子網路，是依據下列何者來決定？",
     "options": [
       "(A) 網域名稱伺服器 (domain name server)",
@@ -4150,7 +4150,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 333,
+    id: 333,
     "question": "IP (internet protocol) 位址分為公開的 IP位址與私人的 IP位址兩種，下列哪個 IP位址為公開 (合法)，且可以用來連線到 Internet的 IP位址？",
     "options": [
       "(A) 10.20.10.5",
@@ -4163,7 +4163,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 334,
+    id: 334,
     "question": "URL (uniform resource locator) 是用來表示某個網站或檔案在網際網路中，獨一無二的位址。下列何者屬於 URL的一部分？",
     "options": [
       "(A) 檔案複製、檔案儲存",
@@ -4176,7 +4176,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 335,
+    id: 335,
     "question": "設定一個 B級 (class B) 的 IP位址時，使用下列何項網路遮罩 (mask)？",
     "options": [
       "(A) 255.0.0.0",
@@ -4189,7 +4189,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 336,
+    id: 336,
     "question": "IP位址是由幾個 0～255的數字所組成的？",
     "options": [
       "(A) 1個",
@@ -4202,7 +4202,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 337,
+    id: 337,
     "question": "下列哪一個是合法的 IP，可設定給一台伺服器？",
     "options": [
       "(A) 203.64.120.1",
@@ -4215,7 +4215,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 338,
+    id: 338,
     "question": "下列哪一個是正確的 IP位址？",
     "options": [
       "(A) 140.124.3",
@@ -4228,7 +4228,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 339,
+    id: 339,
     "question": "TCP/IP是一種？",
     "options": [
       "(A) 網路周邊設備",
@@ -4241,7 +4241,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 340,
+    id: 340,
     "question": "下列哪一種網路設備，其主要運作層次為「網路層」？",
     "options": [
       "(A) 橋接器 (bridge)",
@@ -4254,7 +4254,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 341,
+    id: 341,
     "question": "將資料轉換成傳輸媒介所能負載、傳遞的電子訊號，並經由網路設備傳送出去，是用於開放系統連結 (OSI) 七層架構中的哪一層？",
     "options": [
       "(A) 傳輸層",
@@ -4267,7 +4267,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 342,
+    id: 342,
     "question": "目前 IP 位址 (IPv4) 被區分為幾個等級 (class)？",
     "options": [
       "(A) 3",
@@ -4280,7 +4280,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 343,
+    id: 343,
     "question": "下列哪一個 IP 位址是屬於 B 級網路的等級？",
     "options": [
       "(A) 62.100.5.2",
@@ -4293,7 +4293,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 344,
+    id: 344,
     "question": "下列何者不是 Windows XP 中「Internet Protocol (TCP / IP) 內容」的設定選項？",
     "options": [
       "(A) 子網路遮罩",
@@ -4306,7 +4306,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 345,
+    id: 345,
     "question": "關於網路中 CSMA / CD 協定，下列敘述何者不正確？",
     "options": [
       "(A) 連接到區域網路上各節點的電腦，都可以接收資料",
@@ -4319,7 +4319,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 346,
+    id: 346,
     "question": "OSI通訊標準中，下列哪一層最靠近應用層？",
     "options": [
       "(A) 網路層",
@@ -4332,7 +4332,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 347,
+    id: 347,
     "question": "電子郵件的傳輸協定 SMTP、POP3、IMAP，是屬於下列哪一層的傳輸協定？",
     "options": [
       "(A) 應用層",
@@ -4345,7 +4345,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 348,
+    id: 348,
     "question": "在 OSI參考模型 (Open System Interconnection Reference Model) 的七層架構中，下列哪一層主要負責規範各項網路服務的使用者介面？",
     "options": [
       "(A) 應用層",
@@ -4358,7 +4358,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 349,
+    id: 349,
     "question": "開放系統連接模型 (Open System Interconnection Reference Model, 簡稱 OSI) 是用來規範電腦網路間的通訊協定。OSI模型共分為七層，請問負責為封包選擇網路傳送路徑的工作是由哪一層所負責？",
     "options": [
       "(A) 實體層 (Physical Layer)",
@@ -4371,7 +4371,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 350,
+    id: 350,
     "question": "在 OSI網路架構中，確保資料於接收端能依發送端的編序正確組合的是屬於哪一層？",
     "options": [
       "(A) 資料鏈結層",
@@ -4384,7 +4384,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 351,
+    id: 351,
     "question": "下列關於開放式系統互連 (Open System Interconnection, OSI) 參考模型的描述，何者錯誤？",
     "options": [
       "(A) 該模型是由 ISO組織制定，是一個用來規範不同電腦系統之間進行通訊的原則",
@@ -4397,7 +4397,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 352,
+    id: 352,
     "question": "網路 OSI模型第二層的交換器 (Switch) 設備，依據下列哪種位址來轉換及傳送訊框 (Frame)？",
     "options": [
       "(A) 實體位址 (MAC)",
@@ -4410,7 +4410,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 353,
+    id: 353,
     "question": "ClassA等級的 IP位址從 10.0.0.251至 10.0.1.5共有幾個 IP位址？",
     "options": [
       "(A) 10個",
@@ -4423,7 +4423,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 354,
+    id: 354,
     "question": "下列何項是屬於 CLASSC等級的 IP位址？",
     "options": [
       "(A) 10.16.1.1",
@@ -4436,7 +4436,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 355,
+    id: 355,
     "question": "IPv6所能表示的 IP位址數量是 IPv4所能表示 IP位址數量的多少倍？",
     "options": [
       "(A) 4",
@@ -4449,7 +4449,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 356,
+    id: 356,
     "question": "下列對於網際網路協定 IP (Internet Protocol) 的描述何者正確？",
     "options": [
       "(A) 全世界的 IP位址可以分為 A,B,C,D四種等級 (Class)",
@@ -4462,7 +4462,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 357,
+    id: 357,
     "question": "某一部電腦中的網路介面卡 IP位址設定為 192.168.1.10，網路遮罩為 255.255.255.128，關於該電腦網路連接與組態，下列敘述何者正確？",
     "options": [
       "(A) 192.168.1.10一定是 WiFi存取點 (WiFi Access Point) 派發的動態 IPv4位址",
@@ -4475,7 +4475,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 358,
+    id: 358,
     "question": "假設有一網頁伺服器 (web server) 的 IP是 192.168.3.10，透過 8080埠號 (port) 提供網頁服務。若要請求這網頁伺服器的網頁服務，下列哪一個請求服務的格式是正確的？",
     "options": [
       "(A) http://192.168.3.10/8080/index.html",
@@ -4488,7 +4488,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 359,
+    id: 359,
     "question": "伺服器 D可以把內部使用的私有 IP位址轉成可連上網際網路的真實 IP位址。伺服器 D所提供的服務，下列何者最為適切？",
     "options": [
       "(A) NAT",
@@ -4501,7 +4501,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 360,
+    id: 360,
     "question": "下列關於各種通訊協定的敘述，何者正確？",
     "options": [
       "(A) TCP/IP協定是廣泛運用在網際網路的通訊協定，在 OSI架構中屬於網路層",
@@ -4514,7 +4514,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 361,
+    id: 361,
     "question": "關於在網路上使用 TCP/IP的協定傳輸封包時，下列敘述何者正確？",
     "options": [
       "(A) 為了提高傳輸效率，使用 TCP協定不會檢查封包是否錯誤或遺失，因此不會要求傳送端重傳",
@@ -4527,7 +4527,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 362,
+    id: 362,
     "question": "有關 TCP / IP 通訊協定應用於網際網路服務的敘述，下列何者正確？",
     "options": [
       "(A) ARP 通訊協定為選擇資料封包的傳輸路徑",
@@ -4540,7 +4540,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 363,
+    id: 363,
     "question": "某台個人電腦其名稱為 PC 123、IP 位址為 192.168.123.132、子網路遮罩為 255.255.255.128，下列何項 IP 與 PC 123 位於相同子網路？",
     "options": [
       "(A) 192.168.123.123",
@@ -4553,7 +4553,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 364,
+    id: 364,
     "question": "在 TCP / IP通訊協定中，哪一層將訊息 (Messages) 分割成符合網際網路傳輸大小的區塊？",
     "options": [
       "(A) Internet層",
@@ -4566,7 +4566,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 365,
+    id: 365,
     "question": "Class C的 IP位址，其預設子網路遮罩為下列何者？",
     "options": [
       "(A) 255.255.255.192",
@@ -4579,7 +4579,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 366,
+    id: 366,
     "question": "IPv4多點傳輸範圍是從？",
     "options": [
       "(A) 127.0.0.0~127.55.255.255",
@@ -4592,7 +4592,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 367,
+    id: 367,
     "question": "OSI中的哪一層主要功能是路由？",
     "options": [
       "(A) 實體",
@@ -4605,7 +4605,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 368,
+    id: 368,
     "question": "回送的 IP位址範圍是哪列哪段？",
     "options": [
       "(A) 10.0.0.0~10.255.255.255",
@@ -4618,7 +4618,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 369,
+    id: 369,
     "question": "CSMA/CD具有哪兩個特性？",
     "options": [
       "(A) 只能與實體匯流排拓樸搭配",
@@ -4632,7 +4632,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 370,
+    id: 370,
     "question": "所有 IPv4位址都包含哪些？",
     "options": [
       "(A) 網路識別碼和主機識別碼",
@@ -4645,7 +4645,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 371,
+    id: 371,
     "question": "OSI模型中的哪一層定義 MAC位址？",
     "options": [
       "(A) 應用",
@@ -4658,7 +4658,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 372,
+    id: 372,
     "question": "下列哪個是公有 IP位址？",
     "options": [
       "(A) 192.168.0.0/16",
@@ -4671,7 +4671,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 373,
+    id: 373,
     "question": "IPv6位址中有幾個位元？",
     "options": [
       "(A) 16",
@@ -4684,7 +4684,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 374,
+    id: 374,
     "question": "下列哪兩項功能是 OSI模型中應用層來實作的？",
     "options": [
       "(A) 遠端檔案服務",
@@ -4698,7 +4698,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 375,
+    id: 375,
     "question": "只有 IPv4網路的環境中，佈署執行 Windows Server，手動設定網路時有哪兩項是必要的參數？",
     "options": [
       "(A) DNS",
@@ -4712,7 +4712,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 376,
+    id: 376,
     "question": "ICMP Ping訊息運作在 OSI模型的哪一層？",
     "options": [
       "(A) 網路",
@@ -4725,7 +4725,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 377,
+    id: 377,
     "question": "下列何者是多點傳送位址？",
     "options": [
       "(A) 169.254.0.1",
@@ -4738,7 +4738,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 378,
+    id: 378,
     "question": "需要將電腦設定成透過區網 (LAN)，要與其他電腦通訊，至少需要哪兩種參數？",
     "options": [
       "(A) IP位址",
@@ -4752,7 +4752,7 @@ const questions = [
     "type": "multiple"
   },
   {
-    "id": 379,
+    id: 379,
     "question": "Teredo通道是什麼樣的通訊協定？",
     "options": [
       "(A) 可動態配置 IPV6位址",
@@ -4765,7 +4765,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 380,
+    id: 380,
     "question": "CIDR標計法 192.168.2.1/24指的是下列哪一個 IP組態？",
     "options": [
       "(A) 192.168.2.1 255.255.255.128",
@@ -4778,7 +4778,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 381,
+    id: 381,
     "question": "根據 OSI模型，加密是在哪一層進行？",
     "options": [
       "(A) 展示",
@@ -4791,7 +4791,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 382,
+    id: 382,
     "question": "哪一個通訊協定有提供加密封包的功能？",
     "options": [
       "(A) SNMP",
@@ -4804,7 +4804,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 383,
+    id: 383,
     "question": "下列哪一項是公用 IP位址？",
     "options": [
       "(A) 192.168.26.101",
@@ -4817,7 +4817,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 384,
+    id: 384,
     "question": "哪一項是 IPv6的迴路位址？",
     "options": [
       "(A) FE80::127",
@@ -4830,7 +4830,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 385,
+    id: 385,
     "question": "網路已設定成數個路由子網路，檢閱 192.168.14.0/24網路的流量報告，並發現許多封包定址到 192.168.14.255這是哪個位址範例？",
     "options": [
       "(A) 不合法",
@@ -4844,7 +4844,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 386,
+    id: 386,
     "question": "下列哪個項目使用已偵測節點之間碰撞為基礎的網路存取方法？",
     "options": [
       "(A) 權杖環 (token-ring)",
@@ -4857,7 +4857,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 387,
+    id: 387,
     "question": "每個 IPv4位址，都包含？",
     "options": [
       "(A) 網路識別碼和主機識別碼",
@@ -4870,7 +4870,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 388,
+    id: 388,
     "question": "迴路位址？",
     "options": [
       "(A) 127.0.0.0-127.255.255.255",
@@ -4882,7 +4882,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 389,
+    id: 389,
     "question": "連線導向的通訊協定？提供保證的服務",
     "options": [
       "(A) TCP",
@@ -4894,7 +4894,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 390,
+    id: 390,
     "question": "類別 A的 IP位址？",
     "options": [
       "(A) 64.123.12.11",
@@ -4907,7 +4907,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 391,
+    id: 391,
     "question": "你的家用電腦，在存取網際網路時發生問題，你懷疑網際網路路由器的 DHCP服務，未正常運作，因此你檢查了電腦的 IP位址，哪一個位址會指出路由器的 DHCP服務無法正常運作？",
     "options": [
       "(A) 10.19.1.15",
@@ -4920,7 +4920,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 392,
+    id: 392,
     "question": "私人網路位址？",
     "options": [
       "(A) 127.0.0.0-127.255.255.255",
@@ -4932,7 +4932,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 393,
+    id: 393,
     "question": "非連綫式的訊息架構通訊協定提供？盡力而為的服務",
     "options": [
       "(A) TCP",
@@ -4944,7 +4944,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 394,
+    id: 394,
     "question": "類別 B的 IP位址？",
     "options": [
       "(A) 64.123.12.11",
@@ -4957,7 +4957,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 395,
+    id: 395,
     "question": "ftp.sunsetweb.org的頂層網域是？",
     "options": [
       "(A) sunsetweb",
@@ -4970,7 +4970,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 396,
+    id: 396,
     "question": "多點傳送位址？",
     "options": [
       "(A) 127.0.0.0-127.255.255.255",
@@ -4982,7 +4982,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 397,
+    id: 397,
     "question": "網際網路通訊協定，第六版 IPv6的迴路位址？",
     "options": [
       "(A) ::",
@@ -4995,7 +4995,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 398,
+    id: 398,
     "question": "類別 C的 IP位址？",
     "options": [
       "(A) 64.123.12.11",
@@ -5008,7 +5008,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 399,
+    id: 399,
     "question": "IPv4多點傳送位址的範圍是從？",
     "options": [
       "(A) 127.0.0.0-127.255.255.255",
@@ -5021,7 +5021,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 400,
+    id: 400,
     "question": "哪種通訊協定是在 TCP模型的傳輸層運作？",
     "options": [
       "(A) FTP",
@@ -5034,7 +5034,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 401,
+    id: 401,
     "question": "類別 D的 IP位址？",
     "options": [
       "(A) 64.123.12.11",
@@ -5047,133 +5047,133 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 402,
+    id: 402,
     "type": "truefalse",
     "question": "(A) IPv4路由器可以將網路廣播轉送到區域網路的子網路以外",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 403,
+    id: 403,
     "type": "truefalse",
     "question": "(B) IPV6流量可以透過 IPV4網路在 IPV6網路之間進行傳輸",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 404,
+    id: 404,
     "type": "truefalse",
     "question": "(C) 將 windows電腦設定為自動取得 IP，但無法連結 DHCP伺服器時，電腦將會指派自動私人 IP位址 (APIPA)",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 405,
+    id: 405,
     "type": "truefalse",
     "question": "(A) 0:0:0:0:0:0:0:0:1是 IPV6的回路位址",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 406,
+    id: 406,
     "type": "truefalse",
     "question": "(B) FEC0::9C5A是有效的網站-本機 (site-local) IPV6位址",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 407,
+    id: 407,
     "type": "truefalse",
     "question": "(C) FE80::F856:02AA是有效的連結-本機 (APIPA) IPV6位址",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 408,
+    id: 408,
     "type": "truefalse",
     "question": "(A) IPV6位址長度是 64位元",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 409,
+    id: 409,
     "type": "truefalse",
     "question": "(B) IPV6位址會分成 8位元區塊",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 410,
+    id: 410,
     "type": "truefalse",
     "question": "(C) IPV6位址是以十進位小數點標記法來表示",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 411,
+    id: 411,
     "type": "truefalse",
     "question": "(A) HTTP，TELNET，SMTP通訊協定都在 OSI模型的第七層運作",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 412,
+    id: 412,
     "type": "truefalse",
     "question": "(B) OSI模型的第四層定義如何建立，管理和終止應用程式之間的連線",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 413,
+    id: 413,
     "type": "truefalse",
     "question": "(C) OSI第三層定義如何路由傳送網路裝置之間的流量",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 414,
+    id: 414,
     "type": "truefalse",
     "question": "(A) 21DA:D3:0:2F3B:2AA:FF:FE28:9C5A是有效的 IPV6單點傳輸位址",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 415,
+    id: 415,
     "type": "truefalse",
     "question": "(B) FE80::2AA:FF:FE28:9C5A是有效的 IPV6位址",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 416,
+    id: 416,
     "type": "truefalse",
     "question": "(C) 21DA::02AA:::FF:FE28:9C5A是有效的 IPV6位址",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 417,
+    id: 417,
     "type": "truefalse",
     "question": "(A) IPV4包含 64個位元",
     "answer": "否",
     "source": "ch4_text.txt"
   },
   {
-    "id": 418,
+    id: 418,
     "type": "truefalse",
     "question": "(B) 將 IPV4位址的二進位位元分成各為八位元資料組的八位元欄位是標準的做法",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 419,
+    id: 419,
     "type": "truefalse",
     "question": "(C) 子網路遮罩是用來是分別網路和主機位址",
     "answer": "是",
     "source": "ch4_text.txt"
   },
   {
-    "id": 420,
+    id: 420,
     "question": "迴路網址對應的IP範圍是？",
     "options": [
       "(A) 127.0.0.0~127.255.255.255",
@@ -5185,7 +5185,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 421,
+    id: 421,
     "question": "私人網路位址對應的IP範圍是？",
     "options": [
       "(A) 127.0.0.0~127.255.255.255",
@@ -5197,7 +5197,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 422,
+    id: 422,
     "question": "多點傳送位址對應的IP範圍是？",
     "options": [
       "(A) 127.0.0.0~127.255.255.255",
@@ -5209,7 +5209,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 423,
+    id: 423,
     "question": "多點傳輸的定義是？",
     "options": [
       "(A) 指派給位於網路各個子目錄的一個或多個網路界面，並且於一對多通訊",
@@ -5221,7 +5221,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 424,
+    id: 424,
     "question": "廣播的定義是？",
     "options": [
       "(A) 指派給位於網路各個子目錄的一個或多個網路界面，並且於一對多通訊",
@@ -5233,7 +5233,7 @@ const questions = [
     "type": "single"
   },
   {
-    "id": 425,
+    id: 425,
     "question": "單點傳播的定義是？",
     "options": [
       "(A) 指派給位於網路各個子目錄的一個或多個網路界面，並且於一對多通訊",
