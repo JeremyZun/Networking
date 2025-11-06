@@ -324,7 +324,7 @@ function loadQuestion(index) {
             optionElement.dataset.option = option.charAt(1); // 提取 A, B, C, D
             
             // 檢查是否已經回答過這題
-            if (userAnswers[index] !== undefined) {
+            if (userAnswers[index] !== undefined && userAnswers[index].selected) {
                 if (optionElement.dataset.option === userAnswers[index].selected) {
                     optionElement.classList.add('selected');
                     
@@ -382,37 +382,39 @@ function loadQuestion(index) {
         falseOption.dataset.option = '否';
         
         // 檢查是否已經回答過這題
-        if (userAnswers[index] !== undefined) {
+        if (userAnswers[index] !== undefined && userAnswers[index].selected) {
             if (userAnswers[index].selected === '是') {
                 trueOption.classList.add('selected');
             } else if (userAnswers[index].selected === '否') {
                 falseOption.classList.add('selected');
             }
             
-            // 顯示正確/錯誤狀態
-            if (userAnswers[index].selected === question.answer) {
-                if (userAnswers[index].selected === '是') {
-                    trueOption.classList.add('correct');
+            // 顯示正確/錯誤狀態（僅在練習模式或已交卷的考試模式）
+            if (isExamSubmitted || currentMode === 'practice') {
+                if (userAnswers[index].selected === question.answer) {
+                    if (userAnswers[index].selected === '是') {
+                        trueOption.classList.add('correct');
+                    } else {
+                        falseOption.classList.add('correct');
+                    }
                 } else {
-                    falseOption.classList.add('correct');
-                }
-            } else {
-                if (userAnswers[index].selected === '是') {
-                    trueOption.classList.add('incorrect');
-                } else {
-                    falseOption.classList.add('incorrect');
+                    if (userAnswers[index].selected === '是') {
+                        trueOption.classList.add('incorrect');
+                    } else {
+                        falseOption.classList.add('incorrect');
+                    }
+                    
+                    // 顯示正確答案
+                    if (question.answer === '是') {
+                        trueOption.classList.add('correct');
+                    } else {
+                        falseOption.classList.add('correct');
+                    }
                 }
                 
-                // 顯示正確答案
-                if (question.answer === '是') {
-                    trueOption.classList.add('correct');
-                } else {
-                    falseOption.classList.add('correct');
-                }
+                // 顯示回饋
+                showFeedback(index);
             }
-            
-            // 顯示回饋
-            showFeedback(index);
         }
         
         trueOption.addEventListener('click', () => selectOption(trueOption, index));
@@ -606,15 +608,15 @@ function switchToPracticeMode() {
 function selectOption(optionElement, questionIndex) {
     const question = currentMode === 'exam' ? examQuestions[questionIndex] : questions[questionIndex];
     
-    // 如果已經交卷或是練習模式下已經回答過，不允許再次選擇
-    if ((currentMode === 'exam' && isExamSubmitted) || userAnswers[questionIndex] !== undefined) {
+    // 如果已經交卷，不允許更改
+    if (currentMode === 'exam' && isExamSubmitted) {
         return;
     }
     
     // 移除其他選項的選中狀態
     const options = document.querySelectorAll('.option');
     options.forEach(opt => {
-        opt.classList.remove('selected');
+        opt.classList.remove('selected', 'correct', 'incorrect');
     });
     
     // 標記選中的選項
@@ -622,6 +624,12 @@ function selectOption(optionElement, questionIndex) {
     
     // 記錄用戶答案
     const selectedOption = optionElement.dataset.option;
+    
+    // 檢查是否已經有答案，如果有則更新分數
+    const hadPreviousAnswer = userAnswers[questionIndex] !== undefined;
+    const previousWasCorrect = hadPreviousAnswer ? userAnswers[questionIndex].isCorrect : false;
+    
+    // 更新答案
     userAnswers[questionIndex] = {
         selected: selectedOption,
         isCorrect: selectedOption === question.answer
@@ -630,10 +638,24 @@ function selectOption(optionElement, questionIndex) {
     // 在練習模式下立即顯示結果，考試模式下只記錄答案
     if (currentMode === 'practice') {
         if (selectedOption === question.answer) {
-            score.correct++;
+            // 如果之前是錯誤的，現在修正為正確，需要更新分數
+            if (hadPreviousAnswer && !previousWasCorrect) {
+                score.incorrect--;
+                score.correct++;
+            } else if (!hadPreviousAnswer) {
+                // 第一次回答正確
+                score.correct++;
+            }
             optionElement.classList.add('correct');
         } else {
-            score.incorrect++;
+            // 如果之前是正確的，現在變成錯誤，需要更新分數
+            if (hadPreviousAnswer && previousWasCorrect) {
+                score.correct--;
+                score.incorrect++;
+            } else if (!hadPreviousAnswer) {
+                // 第一次回答錯誤
+                score.incorrect++;
+            }
             optionElement.classList.add('incorrect');
             
             // 顯示正確答案
