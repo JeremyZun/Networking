@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking題庫測驗系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Networking題庫測驗系統</h1>
+            <div class="mode-indicator">
+                <span id="current-mode">練習模式</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">題目:</span>
+                    <span id="current-question">1</span>/<span id="total-questions">290</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">正確:</span>
+                    <span id="correct-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">錯誤:</span>
+                    <span id="incorrect-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">正確率:</span>
+                    <span id="accuracy">0%</span>
+                </div>
+            </div>
+            <div class="keyboard-help">
+                <button id="help-btn" class="help-btn">鍵盤操作說明 (?)</button>
+            </div>
+        </header>
+
+        <!-- 模式選擇 -->
+        <div class="mode-selection">
+            <button id="practice-mode-btn" class="mode-btn active">練習模式</button>
+            <button id="exam-mode-btn" class="mode-btn">模擬考模式</button>
+        </div>
+
+        <main>
+            <div class="quiz-container">
+                <div class="question-header">
+                    <span id="question-id">題目 1</span>
+                    <span id="question-source">[92二技]</span>
+                </div>
+                <div class="question-text" id="question-text">
+                    金融業間之電子資金移轉作業是屬於電子商務的何種範疇？
+                </div>
+                
+                <div class="options-container" id="options-container">
+                    <!-- 選項將由 JavaScript 動態生成 -->
+                </div>
+                
+                <div class="answer-feedback" id="answer-feedback">
+                    <!-- 答題回饋將顯示在這裡 -->
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="nav-btn">上一題 (←)</button>
+                    <button id="next-btn" class="nav-btn">下一題 (→)</button>
+                    <button id="show-answer-btn" class="nav-btn">顯示答案 (A)</button>
+                    <button id="submit-exam-btn" class="nav-btn" style="display: none;">交卷 (S)</button>
+                    <button id="reset-btn" class="nav-btn">重新開始 (R)</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 如有缺少請告知</p>
+        </footer>
+    </div>
+
+    <!-- 鍵盤操作說明模態框 -->
+    <div id="keyboard-help-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>鍵盤操作說明</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="keyboard-shortcuts">
+                    <div class="shortcut-item">
+                        <span class="key">1-4</span>
+                        <span class="description">選擇答案 A-D</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">Y</span>
+                        <span class="description">是非題選擇「是」</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">N</span>
+                        <span class="description">是非題選擇「否」</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">← 或 P</span>
+                        <span class="description">上一題</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">→ 或 N</span>
+                        <span class="description">下一題</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">A</span>
+                        <span class="description">顯示答案</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">R</span>
+                        <span class="description">重新開始測驗</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <span class="key">?</span>
+                        <span class="description">顯示此說明</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 考試計時器 -->
+    <div id="exam-timer" class="exam-timer">
+        <div class="timer-display">
+            <span id="timer-minutes">50</span>:<span id="timer-seconds">00</span>
+        </div>
+        <div class="timer-progress">
+            <div id="timer-progress-bar" class="timer-progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

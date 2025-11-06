@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.stat-item span:last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.keyboard-help {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.help-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.help-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#question-id {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#question-source {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.options-container {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+    position: relative;
+}
+
+.option:hover {
+    background-color: #e9ecef;
+}
+
+.option.selected {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.option.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.option.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.option-key {
+    display: none; /* 改為隱藏 */
+}
+
+.answer-feedback {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.answer-feedback.correct {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    display: block;
+}
+
+.answer-feedback.incorrect {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    display: block;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1;
+    min-width: 120px;
+}
+
+.nav-btn:hover {
+    background-color: #2980b9;
+}
+
+.nav-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#reset-btn {
+    background-color: #e74c3c;
+}
+
+#reset-btn:hover {
+    background-color: #c0392b;
+}
+
+#show-answer-btn {
+    background-color: #f39c12;
+}
+
+#show-answer-btn:hover {
+    background-color: #d35400;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* 模態框樣式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalopen 0.3s;
+}
+
+@keyframes modalopen {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.close {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #ecf0f1;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.keyboard-shortcuts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shortcut-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.shortcut-item:last-child {
+    border-bottom: none;
+}
+
+.key {
+    background-color: #ecf0f1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+}
+
+.description {
+    flex: 1;
+    margin-left: 15px;
+}
+
+/* 模式選擇樣式 */
+.mode-selection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+/* 模式切換動畫 */
+.mode-btn {
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.mode-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.mode-btn:not(.active):hover {
+    background-color: #d5dbdb;
+    transform: translateY(-2px);
+}
+
+/* 模式切換時的過渡效果 */
+.quiz-container {
+    transition: all 0.3s ease;
+}
+
+/* 考試模式的視覺提示 */
+.exam-mode .quiz-container {
+    border: 2px solid #e74c3c;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.1);
+}
+
+.practice-mode .quiz-container {
+    border: 2px solid #3498db;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.1);
+}
+
+/* 考試計時器樣式 */
+.exam-timer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.timer-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.timer-progress {
+    width: 100%;
+    height: 8px;
+    background-color: #34495e;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.timer-progress-bar {
+    height: 100%;
+    background-color: #2ecc71;
+    width: 100%;
+    transition: width 1s linear, background-color 0.3s;
+}
+
+.timer-progress-bar.warning {
+    background-color: #f39c12;
+}
+
+.timer-progress-bar.danger {
+    background-color: #e74c3c;
+}
+
+/* 考試結果模態框 */
+.exam-results {
+    text-align: center;
+}
+
+.exam-score {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+.exam-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.exam-detail-item {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.exam-detail-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.exam-detail-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.exam-actions {
+    margin-top: 20px;
+}
+
+/* 模式指示器 */
+.mode-indicator {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#current-mode {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.exam-mode #current-mode {
+    background-color: #e74c3c;
+    animation: pulse 2s infinite;
+}
+
+/* 交卷按鈕樣式 */
+#submit-exam-btn {
+    background-color: #27ae60;
+}
+
+#submit-exam-btn:hover {
+    background-color: #219a52;
+}
+
+#submit-exam-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* 考試模式下的選項樣式 */
+.exam-mode .option.selected {
+    background-color: #d6eaf8;
+    border-color: #3498db;
+}
+
+.exam-mode .option.correct,
+.exam-mode .option.incorrect {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+/* 檢視模式下的正確/錯誤顯示 */
+.review-mode .option.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.review-mode .option.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.review-mode .option.selected.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 響應式設計 */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        margin: 5px 0;
+    }
+    
+    .keyboard-help {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .exam-timer {
+        position: static;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+    
+    .exam-details {
+        grid-template-columns: 1fr;
+    }
+}
