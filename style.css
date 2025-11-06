@@ -561,3 +561,64 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* 行動裝置優化 */
+@media (max-width: 768px) {
+    .quiz-container {
+        /* 改善觸控體驗 */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: pan-y; /* 允許垂直滾動，但防止水平滾動 */
+    }
+    
+    .option {
+        /* 增大觸控目標 */
+        min-height: 50px;
+        padding: 15px;
+    }
+    
+    .nav-btn {
+        /* 增大按鈕觸控區域 */
+        min-height: 44px;
+        padding: 12px 15px;
+    }
+    
+    /* 滑動提示 */
+    .swipe-hint {
+        text-align: center;
+        color: #7f8c8d;
+        font-size: 0.8rem;
+        margin-top: 10px;
+        padding: 10px;
+        display: none;
+    }
+    
+    /* 在行動裝置上顯示滑動提示 */
+    @media (max-width: 600px) {
+        .swipe-hint {
+            display: block;
+        }
+    }
+}
+
+/* 防止文字選擇 */
+.quiz-container, .option, .nav-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 改善觸控反饋 */
+.option:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}
+
+.nav-btn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}

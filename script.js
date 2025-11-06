@@ -10,6 +10,10 @@ let examQuestions = [];
 let examTimer = null;
 let examTimeLeft = 50 * 60;
 let isExamSubmitted = false; // 新增：考試是否已交卷
+// 觸控滑動相關變數
+let touchStartX = 0;
+let touchEndX = 0;
+const swipeThreshold = 50; // 最小滑動距離閾值
 
 // DOM 元素
 const questionIdElement = document.getElementById('question-id');
@@ -60,6 +64,9 @@ function init() {
     // 模式選擇事件監聽器
     document.getElementById('practice-mode-btn').addEventListener('click', switchToPracticeMode);
     document.getElementById('exam-mode-btn').addEventListener('click', startExamMode);
+    
+    // 初始化觸控事件
+    initTouchEvents();
     
     // 初始化視覺模式
     updateVisualMode();
@@ -173,6 +180,94 @@ function handleKeyDown(event) {
             break;
     }
 }
+
+
+
+// 初始化觸控事件
+function initTouchEvents() {
+    const quizContainer = document.querySelector('.quiz-container');
+    
+    quizContainer.addEventListener('touchstart', handleTouchStart, false);
+    quizContainer.addEventListener('touchmove', handleTouchMove, false);
+    quizContainer.addEventListener('touchend', handleTouchEnd, false);
+}
+
+// 處理觸控開始
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+// 處理觸控移動
+function handleTouchMove(event) {
+    // 防止頁面滾動
+    if (Math.abs(event.touches[0].clientX - touchStartX) > 10) {
+        event.preventDefault();
+    }
+}
+
+// 處理觸控結束
+function handleTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+}
+
+// 處理滑動動作
+function handleSwipe() {
+    const swipeDistance = touchEndX - touchStartX;
+    
+    // 如果滑動距離超過閾值
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+        if (swipeDistance > 0) {
+            // 向右滑動 - 上一題
+            if (!prevButton.disabled) {
+                goToPreviousQuestion();
+                showSwipeFeedback('prev');
+            }
+        } else {
+            // 向左滑動 - 下一題
+            if (!nextButton.disabled) {
+                goToNextQuestion();
+                showSwipeFeedback('next');
+            }
+        }
+    }
+}
+
+// 顯示滑動反饋
+function showSwipeFeedback(direction) {
+    // 創建或獲取反饋元素
+    let feedbackElement = document.getElementById('swipe-feedback');
+    if (!feedbackElement) {
+        feedbackElement = document.createElement('div');
+        feedbackElement.id = 'swipe-feedback';
+        feedbackElement.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        `;
+        document.body.appendChild(feedbackElement);
+    }
+    
+    // 設置反饋文字
+    feedbackElement.textContent = direction === 'prev' ? '← 上一題' : '下一題 →';
+    
+    // 顯示動畫
+    feedbackElement.style.opacity = '1';
+    setTimeout(() => {
+        feedbackElement.style.opacity = '0';
+    }, 300);
+}
+
 
 // 顯示幫助模態框
 function showHelpModal() {
